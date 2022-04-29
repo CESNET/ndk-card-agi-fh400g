@@ -308,7 +308,8 @@ begin
         SYSCLK                  => AG_SYSCLK0_P,
         SYSRST                  => '0',
 
-        PCIE_SYSCLK             => PCIE1_CLK1_P & PCIE1_CLK0_P & PCIE0_CLK1_P & PCIE0_CLK0_P,
+        PCIE_SYSCLK_P           => PCIE1_CLK1_P & PCIE1_CLK0_P & PCIE0_CLK1_P & PCIE0_CLK0_P,
+        PCIE_SYSCLK_N           => (others => '0'),
         PCIE_SYSRST_N           => PCIE1_PERST_N & PCIE0_PERST_N,
 
         PCIE_RX_P(1*PCIE_LANES-1 downto 0*PCIE_LANES) => PCIE0_RX_P,
