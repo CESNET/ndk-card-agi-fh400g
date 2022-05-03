@@ -236,12 +236,26 @@ end entity;
 
 architecture FULL of FPGA is
 
-    constant PCIE_LANES                 : integer := 16;
-    constant PCIE_CLKS                  : integer := 2;
-    constant PCIE_CONS                  : integer := 2;
-    constant MISC_IN_WIDTH              : integer := 8;
-    constant MISC_OUT_WIDTH             : integer := 8;
-    constant ETH_LANES                  : integer := 8;
+    function f_dma_endpoints(PCIE_ENDPOINTS : natural; PCIE_EP_MODE : natural; PCIE_GEN : natural) return natural is
+        variable dma_ep_v : natural;
+    begin
+        dma_ep_v := PCIE_ENDPOINTS;
+        if (PCIE_EP_MODE = 0) then
+            dma_ep_v := 2*dma_ep_v;
+        end if;
+        if (PCIE_GEN = 5) then
+            dma_ep_v := 2*dma_ep_v;
+        end if;
+        return dma_ep_v;
+    end function;
+
+    constant PCIE_LANES     : integer := 16;
+    constant PCIE_CLKS      : integer := 2;
+    constant PCIE_CONS      : integer := 2;
+    constant MISC_IN_WIDTH  : integer := 8;
+    constant MISC_OUT_WIDTH : integer := 8;
+    constant ETH_LANES      : integer := 8;
+    constant DMA_ENDPOINTS  : integer := f_dma_endpoints(PCIE_ENDPOINTS,PCIE_ENDPOINT_MODE,PCIE_GEN);
 
 begin
 
@@ -299,10 +313,12 @@ begin
         PCIE_ENDPOINT_TYPE      => "R_TILE",
         PCIE_ENDPOINT_MODE      => PCIE_ENDPOINT_MODE,
 
-        DMA_ENDPOINTS           => tsel(PCIE_ENDPOINT_MODE=1,PCIE_ENDPOINTS,2*PCIE_ENDPOINTS),
+        DMA_ENDPOINTS           => DMA_ENDPOINTS,
         DMA_MODULES             => 1,
         DMA_RX_CHANNELS         => DMA_RX_CHANNELS,
-        DMA_TX_CHANNELS         => DMA_TX_CHANNELS
+        DMA_TX_CHANNELS         => DMA_TX_CHANNELS,
+
+        MEM_PORTS               => 0
     )
     port map(
         SYSCLK                  => AG_SYSCLK0_P,
