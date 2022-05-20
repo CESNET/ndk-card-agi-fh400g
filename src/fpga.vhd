@@ -52,7 +52,7 @@ port (
     -- =========================================================================
     -- Agilex can controlled MAX10 booting or reconfiguration
     AG_M10_IMG_SEL_N : out   std_logic; -- MAX10 image selection
-    AG_M10_REBOOT    : out   std_logic; -- MAX10 reboot request
+    AG_M10_REBOOT_N  : out   std_logic; -- MAX10 reboot request
     M10_AG_STATUS_N  : in    std_logic; -- MAX10 status
     M10_AG_DONE      : in    std_logic; -- MAX10 configuration done
         
@@ -266,7 +266,8 @@ begin
     AG_M10_RST_N <= '1';
 
     AG_M10_IMG_SEL_N <= '1';
-    AG_M10_REBOOT    <= '0';
+    -- Must not be permanently assigned to GND!
+    AG_M10_REBOOT_N  <= '1';
 
     AG_CFG_IMG_SEL <= '0';
     AG_REQ_CONF_N  <= '1';

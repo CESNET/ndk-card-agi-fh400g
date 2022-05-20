@@ -69,7 +69,7 @@ set_location_assignment PIN_AK52 -to AG_SOFT_RST
 set_location_assignment PIN_AN51 -to AG_M10_RST_N
 
 set_location_assignment PIN_BF52 -to AG_M10_IMG_SEL_N
-set_location_assignment PIN_AV53 -to AG_M10_REBOOT
+set_location_assignment PIN_AV53 -to AG_M10_REBOOT_N
 set_location_assignment PIN_AD50 -to M10_AG_DONE
 set_location_assignment PIN_AN49 -to M10_AG_STATUS_N
 
@@ -156,7 +156,7 @@ set_instance_assignment -name IO_STANDARD "1.2 V" -to AG_SOFT_RST
 set_instance_assignment -name IO_STANDARD "1.2 V" -to AG_M10_RST_N 
 
 set_instance_assignment -name IO_STANDARD "1.2 V" -to AG_M10_IMG_SEL_N 
-set_instance_assignment -name IO_STANDARD "1.2 V" -to AG_M10_REBOOT 
+set_instance_assignment -name IO_STANDARD "1.2 V" -to AG_M10_REBOOT_N 
 set_instance_assignment -name IO_STANDARD "1.2 V" -to M10_AG_DONE 
 set_instance_assignment -name IO_STANDARD "1.2 V" -to M10_AG_STATUS_N 
 
