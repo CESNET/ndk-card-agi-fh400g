@@ -1,0 +1,17 @@
+# pcie_misc.qsf
+# Copyright (C) 2022 CESNET z. s. p. o.
+# Author(s): Jakub Cabal <cabal@cesnet.cz>
+
+# ==============================================================================
+#  Pinout and IO Standards
+# ==============================================================================
+
+set_location_assignment PIN_AT56 -to PCIE_WAKE
+set_location_assignment PIN_BC55 -to PCIE_CLKREQ
+set_location_assignment PIN_BF54 -to PCIE1_CLK_SEL_N
+set_location_assignment PIN_BC53 -to PCIE2_CLK_SEL_N
+
+set_instance_assignment -name IO_STANDARD "1.2 V" -to PCIE_WAKE
+set_instance_assignment -name IO_STANDARD "1.2 V" -to PCIE_CLKREQ
+set_instance_assignment -name IO_STANDARD "1.2 V" -to PCIE1_CLK_SEL_N
+set_instance_assignment -name IO_STANDARD "1.2 V" -to PCIE2_CLK_SEL_N
