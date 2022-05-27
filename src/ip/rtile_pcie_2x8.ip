@@ -9511,7 +9511,7 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="core16_cap_slot_clk_config_hwtcl" type="int">
           <ipxact:name>core16_cap_slot_clk_config_hwtcl</ipxact:name>
           <ipxact:displayName>Slot clock configuration</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
+          <ipxact:value>1</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_pf0_gen2_ctrl_off_support_mod_ts_hwtcl" type="int">
           <ipxact:name>core16_pf0_gen2_ctrl_off_support_mod_ts_hwtcl</ipxact:name>
@@ -14491,7 +14491,7 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="core8_cap_slot_clk_config_hwtcl" type="int">
           <ipxact:name>core8_cap_slot_clk_config_hwtcl</ipxact:name>
           <ipxact:displayName>Slot clock configuration</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
+          <ipxact:value>1</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core8_pf0_gen2_ctrl_off_support_mod_ts_hwtcl" type="int">
           <ipxact:name>core8_pf0_gen2_ctrl_off_support_mod_ts_hwtcl</ipxact:name>
