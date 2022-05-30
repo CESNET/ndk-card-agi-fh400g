@@ -34,10 +34,10 @@ set_location_assignment PIN_B51 -to QSFP_LED_G[0]
 
 set_instance_assignment -name IO_STANDARD "1.2 V" -to QSFP_I2C_SCL
 set_instance_assignment -name IO_STANDARD "1.2 V" -to QSFP_I2C_SDA
-set_instance_assignment -name IO_STANDARD "1.2 V" -to QSFP_LPMODE
+set_instance_assignment -name IO_STANDARD "1.2 V" -to QSFP_INITMODE
 set_instance_assignment -name IO_STANDARD "1.2 V" -to QSFP_MODPRS_N
 set_instance_assignment -name IO_STANDARD "1.2 V" -to QSFP_MODSEL_N
-set_instance_assignment -name IO_STANDARD "1.2 V" -to QSFP_RESET_N
+set_instance_assignment -name IO_STANDARD "1.2 V" -to QSFP_RST_N
 set_instance_assignment -name IO_STANDARD "1.2 V" -to QSFP_INT_N
 
 set_instance_assignment -name IO_STANDARD "1.2 V" -to QSFP_LED_R[0]
