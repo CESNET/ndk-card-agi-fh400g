@@ -16,6 +16,10 @@ set COMPONENTS [list [list "FPGA_COMMON" $CARD_COMMON_BASE $BOARD]]
 set MOD "$MOD $ENTITY_BASE/ip/iopll_ip.ip"
 set MOD "$MOD $ENTITY_BASE/ip/reset_release_ip.ip"
 set MOD "$MOD $ENTITY_BASE/ip/rtile_pcie_2x8.ip"
+set MOD "$MOD $ENTITY_BASE/ip/sodimm.ip"
+set MOD "$MOD $ENTITY_BASE/ip/sodimm_cal.ip"
+set MOD "$MOD $ENTITY_BASE/ip/OnBoard_DDR4.ip"
+set MOD "$MOD $ENTITY_BASE/ip/emif_agi027_cal.ip"
 
 if {$ETH_ENABLE} {
     if {$ETH_PORT_SPEED(0) == 400} {

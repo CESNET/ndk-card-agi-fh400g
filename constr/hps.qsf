@@ -63,8 +63,10 @@ set_location_assignment PIN_AV33 -to HPS_DDR4_CK
 set_location_assignment PIN_AT34 -to HPS_DDR4_CK_N
 set_location_assignment PIN_BF34 -to HPS_DDR4_PAR
 
-set_location_assignment PIN_AA31 -to HPS_DDR4_REFCLK0_P
-set_location_assignment PIN_AD32 -to HPS_DDR4_REFCLK0_N
+set_location_assignment PIN_AA31 -to HPS_DDR4_REFCLK_P
+set_location_assignment PIN_AD32 -to HPS_DDR4_REFCLK_N
+set_instance_assignment -name IO_STANDARD "TRUE DIFFERENTIAL SIGNALING" -to HPS_DDR4_REFCLK_P 
+set_instance_assignment -name INPUT_TERMINATION DIFFERENTIAL -to HPS_DDR4_REFCLK_P
 
 set_location_assignment PIN_N33 -to HPS_DDR4_ADDR[0]
 set_location_assignment PIN_L34 -to HPS_DDR4_ADDR[1]
