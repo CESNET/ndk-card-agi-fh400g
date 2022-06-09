@@ -31,3 +31,5 @@ if {$USER_CONST ne ""} {
 
 # Source common core const scripts
 source $CARD_COMMON_BASE/config/ndk_const.tcl
+
+VhdlPkgBool TEST_FW_PCIE1_ONBOARD_DDR4 $TEST_FW_PCIE1_ONBOARD_DDR4

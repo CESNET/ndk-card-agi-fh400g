@@ -40,15 +40,10 @@ set_location_assignment PIN_GW80 -to QSFP_TX_P[1]
 set_location_assignment PIN_GK77 -to QSFP_TX_N[0]
 set_location_assignment PIN_GG78 -to QSFP_TX_P[0]
 
-set_location_assignment PIN_JA73 -to QSFP_REFCLK0_N
 set_location_assignment PIN_JD74 -to QSFP_REFCLK0_P
-set_location_assignment PIN_HH73 -to QSFP_REFCLK1_N
+set_location_assignment PIN_JA73 -to QSFP_REFCLK0_N
 set_location_assignment PIN_HL74 -to QSFP_REFCLK1_P
-
-#set_instance_assignment -name IO_STANDARD "DIFFERENTIAL LVPECL" -to QSFP_REFCLK0_N
-#set_instance_assignment -name IO_STANDARD "DIFFERENTIAL LVPECL" -to QSFP_REFCLK0_P
-#set_instance_assignment -name IO_STANDARD "DIFFERENTIAL LVPECL" -to QSFP_REFCLK1_N
-#set_instance_assignment -name IO_STANDARD "DIFFERENTIAL LVPECL" -to QSFP_REFCLK1_P
+set_location_assignment PIN_HH73 -to QSFP_REFCLK1_N
 
 set_instance_assignment -name IO_STANDARD "HSSI DIFFERENTIAL I/O" -to QSFP_RX_P[0]
 set_instance_assignment -name IO_STANDARD "HSSI DIFFERENTIAL I/O" -to QSFP_RX_P[1]

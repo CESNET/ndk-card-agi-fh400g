@@ -71,8 +71,13 @@ set DMA_RX_BLOCKING_MODE true
 
 # DDR4 parameters:
 # ===============
-set MEM_PORTS       0
+set MEM_PORTS 2
 
 # Other parameters:
 # =================
 set TSU_ENABLE false
+
+set TEST_FW_PCIE1_ONBOARD_DDR4 false
+if {$TEST_FW_PCIE1_ONBOARD_DDR4} {
+	set MEM_PORTS 1
+}
