@@ -27,7 +27,7 @@ set_global_assignment -name PRESERVE_UNUSED_XCVR_CHANNEL ON
 
 set_global_assignment -name PWRMGT_SLAVE_DEVICE_TYPE ED8401
 set_global_assignment -name PWRMGT_SLAVE_DEVICE0_ADDRESS 40
-set_global_assignment -name CONFIGURATION_VCCIO_LEVEL 1.8V
+set_global_assignment -name CONFIGURATION_VCCIO_LEVEL AUTO
 set_global_assignment -name CVP_MODE OFF
 set_global_assignment -name CVP_CONFDONE_OPEN_DRAIN OFF
 set_global_assignment -name HPS_DAP_SPLIT_MODE DISABLED
@@ -38,6 +38,7 @@ set_global_assignment -name GENERATE_COMPRESSED_SOF ON
 set_global_assignment -name PWRMGT_VOLTAGE_OUTPUT_FORMAT "LINEAR FORMAT"
 set_global_assignment -name PWRMGT_LINEAR_FORMAT_N "-13"
 set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "ACTIVE SERIAL X4"
+#set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "AVST X32"
 
 set_global_assignment -name VERILOG_MACRO "ALTERA_EMIF_ENABLE_ISSP=1"
 
