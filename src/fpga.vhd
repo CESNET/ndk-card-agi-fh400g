@@ -497,11 +497,6 @@ begin
         MISC_IN_WIDTH           => MISC_IN_WIDTH,
         MISC_OUT_WIDTH          => MISC_OUT_WIDTH,
 
-        USER_GENERIC0           => USER_GENERIC0,
-        USER_GENERIC1           => USER_GENERIC1,
-        USER_GENERIC2           => USER_GENERIC2,
-        USER_GENERIC3           => USER_GENERIC3,
-
         BOARD                   => "400G1",
         DEVICE                  => "AGILEX",
 
