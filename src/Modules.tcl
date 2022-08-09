@@ -53,4 +53,5 @@ if {$ETH_ENABLE} {
 }
 
 # Top-level
+set MOD "$MOD $OFM_PATH/comp/ctrls/flash/flashctrl.vhd"
 set MOD "$MOD $ENTITY_BASE/fpga.vhd"

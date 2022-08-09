@@ -66,12 +66,12 @@ port (
     -- =========================================================================
     --  FLASH INTERFACE (disable for now, QSPI flash used by default)
     -- =========================================================================
-    --FLASH_A                 : out   std_logic_vector(26 downto 0); -- Memory Address bus
-    --FLASH_D                 : inout std_logic_vector(15 downto 0); -- Memory Data bus
-    --FLASH_CE0_N             : out   std_logic;                     -- Memory 0 Chip Enable (active is LOW)
-    --FLASH_CE1_N             : out   std_logic;                     -- Memory 0 Chip Enable (active is LOW)
-    --FLASH_OE_N              : out   std_logic;                     -- Memory Output Enable (both, active is LOW)
-    --FLASH_WE_N              : out   std_logic;                     -- Memory Write Enable (both, active is LOW)
+    FLASH_A                 : out   std_logic_vector(26 downto 0); -- Memory Address bus
+    FLASH_D                 : inout std_logic_vector(15 downto 0); -- Memory Data bus
+    FLASH_CE0_N             : out   std_logic;                     -- Memory 0 Chip Enable (active is LOW)
+    FLASH_CE1_N             : out   std_logic;                     -- Memory 0 Chip Enable (active is LOW)
+    FLASH_OE_N              : out   std_logic;                     -- Memory Output Enable (both, active is LOW)
+    FLASH_WE_N              : out   std_logic;                     -- Memory Write Enable (both, active is LOW)
     --FLASH_RY_BY_N           : in    std_logic;                     -- Memory Ready/busy signal (both)
     --FLASH_BYTE_N            : out   std_logic;                     -- Memory data bus width (8bits for both, active is LOW)
     --FLASH_WP_N              : out   std_logic;                     -- Memory data Write protect signal (for both, active is LOW)
@@ -379,8 +379,8 @@ architecture FULL of FPGA is
     constant PCIE_LANES      : integer := 16;
     constant PCIE_CLKS       : integer := 2;
     constant PCIE_CONS       : integer := 2;
-    constant MISC_IN_WIDTH   : integer := 8;
-    constant MISC_OUT_WIDTH  : integer := 8;
+    constant MISC_IN_WIDTH   : integer := 64;
+    constant MISC_OUT_WIDTH  : integer := 64 + 5;
     constant ETH_LANES       : integer := 8;
     constant DMA_ENDPOINTS   : integer := f_dma_endpoints(PCIE_ENDPOINTS,PCIE_ENDPOINT_MODE,PCIE_GEN);
     constant DMA_GLS_EN      : boolean := true;
@@ -428,6 +428,20 @@ architecture FULL of FPGA is
     signal emif_cal_success       : std_logic_vector(MEM_PORTS-1 downto 0);
     signal emif_cal_fail          : std_logic_vector(MEM_PORTS-1 downto 0);
 
+    signal misc_in                : std_logic_vector(MISC_IN_WIDTH-1 downto 0);
+    signal misc_out               : std_logic_vector(MISC_OUT_WIDTH-1 downto 0);
+
+    signal flash_rst              : std_logic;
+    signal flash_clk              : std_logic;
+    signal flash_wr_data          : std_logic_vector(63 downto 0);
+    signal flash_rd_data          : std_logic_vector(63 downto 0);
+    signal flash_wr_en            : std_logic;
+    signal flash_d_i              : std_logic_vector(15 downto 0);
+    signal flash_d_o              : std_logic_vector(15 downto 0);
+    signal flash_d_oe             : std_logic;
+    signal flash_d_oe_n           : std_logic;
+    signal flash_ce_n             : std_logic;
+
 begin
 
     AG_I2C_SCLK	<= 'Z';
@@ -440,8 +454,8 @@ begin
     -- Must not be permanently assigned to GND!
     AG_M10_REBOOT_N  <= '1';
 
-    AG_CFG_IMG_SEL <= '0';
-    AG_REQ_CONF_N  <= '1';
+    AG_CFG_IMG_SEL <= misc_out(3);
+    AG_REQ_CONF_N  <= not misc_out(2);
 
     PCIE_WAKE       <= '1';
     PCIE_CLKREQ     <= '1';
@@ -568,9 +582,45 @@ begin
         STATUS_LED_G            => AG_LED_G,
         STATUS_LED_R            => AG_LED_R,
 
-        MISC_IN                 => (others => '0'),
-        MISC_OUT                => open
+        MISC_IN                 => misc_in,
+        MISC_OUT                => misc_out
     );
+
+    -- ---------------------------------------------------------------------------
+    FLASHCTRL_I: entity work.flashctrl
+    generic map (
+        CLK_PERIOD => 2 -- Clock period time in ns
+    )
+    port map (
+        RESET  => flash_rst,
+        CLK    => flash_clk,
+        -- Command interface
+        DWR    => flash_wr_data,
+        DWR_WR => flash_wr_en,
+        DRD    => flash_rd_data,
+        -- FLASH interface
+        AD     => FLASH_A,
+        D_I    => FLASH_D,
+        D_O    => flash_d_o,
+        D_OE   => flash_d_oe,
+        CS_N   => flash_ce_n,
+        OE_N   => FLASH_OE_N,
+        RST_N  => open,
+        WE_N   => FLASH_WE_N
+    );
+
+    FLASH_D     <= flash_d_o when flash_d_oe = '1' else (others => 'Z');
+    -- flash_wr_data(59) is the highest address bit. It is used to select beetween FLASH0 and FLASH1 chips
+    FLASH_CE0_N <= flash_ce_n or (flash_wr_data(59));
+    FLASH_CE1_N <= flash_ce_n or (not flash_wr_data(59));
+
+    misc_in       <= flash_rd_data;
+    flash_clk     <= misc_out(0);
+    flash_rst     <= misc_out(1);
+    flash_wr_en   <= misc_out(4);
+    flash_wr_data <= misc_out(64+5-1 downto 5);
+
+    -- ---------------------------------------------------------------------------
 
     mem_rst_g : for i in 0 to MEM_PORTS-1 generate
         mem_pll_locked_sync_i : entity work.ASYNC_OPEN_LOOP

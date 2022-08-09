@@ -65,8 +65,8 @@ set_location_assignment PIN_U51 -to AG_SYSCLK1_P
 #set_location_assignment PIN_W52 -to AG_SYSCLK1_N
 set_location_assignment PIN_B47 -to AG_EXT_SYNC_1HZ
 
-set_location_assignment PIN_BC45 -to AG_CLK_INT_N
-set_location_assignment PIN_BF46 -to AG_CLK_GEN_LOL_N
+set_location_assignment PIN_BV62 -to AG_CLK_INT_N
+set_location_assignment PIN_CA61 -to AG_CLK_GEN_LOL_N
 
 set_location_assignment PIN_AA51 -to AG_DEV_POR_N
 set_location_assignment PIN_AD52 -to AG_RST_N
@@ -81,9 +81,9 @@ set_location_assignment PIN_AN49 -to M10_AG_STATUS_N
 set_location_assignment PIN_AV51 -to AG_REQ_CONF_N
 set_location_assignment PIN_AT52 -to AG_CFG_IMG_SEL
 
-set_location_assignment PIN_CA57 -to FLASH_A[0]
-set_location_assignment PIN_BM58 -to FLASH_A[1]
-set_location_assignment PIN_BJ57 -to FLASH_A[2]
+set_location_assignment PIN_BM62 -to FLASH_A[0]
+set_location_assignment PIN_BJ61 -to FLASH_A[1]
+set_location_assignment PIN_BM60 -to FLASH_A[2]
 set_location_assignment PIN_BF62 -to FLASH_A[3]
 set_location_assignment PIN_BC61 -to FLASH_A[4]
 set_location_assignment PIN_AT62 -to FLASH_A[5]
