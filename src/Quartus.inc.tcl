@@ -14,8 +14,9 @@ lappend HIERARCHY(COMPONENTS) \
     [list "TOPLEVEL" $CARD_BASE/src "FULL"]
 
 # Design parameters
-set SYNTH_FLAGS(MODULE) "FPGA"
-set SYNTH_FLAGS(FPGA)   "AGIB027R29A1E2VR0"
+set SYNTH_FLAGS(MODULE)    "FPGA"
+set SYNTH_FLAGS(FPGA)      "AGIB027R29A1E2VR0"
+set SYNTH_FLAGS(BITSTREAM) "RBF"
 # Enable Quartus Support-Logic Generation stage
 set SYNTH_FLAGS(QUARTUS_TLG) 1
 
