@@ -20,6 +20,7 @@ set MOD "$MOD $ENTITY_BASE/ip/sodimm.ip"
 set MOD "$MOD $ENTITY_BASE/ip/sodimm_cal.ip"
 set MOD "$MOD $ENTITY_BASE/ip/OnBoard_DDR4.ip"
 set MOD "$MOD $ENTITY_BASE/ip/emif_agi027_cal.ip"
+set MOD "$MOD $ENTITY_BASE/ip/mailbox_client_ip.ip"
 
 if {$ETH_ENABLE} {
     if {$ETH_PORT_SPEED(0) == 400} {
