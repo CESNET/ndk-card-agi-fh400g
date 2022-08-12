@@ -80,9 +80,6 @@ port (
     -- =========================================================================
     --  PCIE INTERFACES
     -- =========================================================================
-    -- PCIe global
-    PCIE_WAKE               : out   std_logic;
-    PCIE_CLKREQ             : out   std_logic;
     -- External PCIe clock selection: 1 = PCIe is slave,
     --                                0 = PCIe is master
     PCIE1_CLK_SEL_N         : out   std_logic;
@@ -457,8 +454,6 @@ begin
     AG_CFG_IMG_SEL <= misc_out(3);
     AG_REQ_CONF_N  <= not misc_out(2);
 
-    PCIE_WAKE       <= '1';
-    PCIE_CLKREQ     <= '1';
     PCIE1_CLK_SEL_N	<= '1';
     PCIE2_CLK_SEL_N	<= '1';
 
