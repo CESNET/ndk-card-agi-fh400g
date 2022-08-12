@@ -515,7 +515,7 @@ begin
         DEVICE                  => "AGILEX",
 
         PCIE_ENDPOINTS          => PCIE_ENDPOINTS,
-        PCIE_ENDPOINT_TYPE      => "R_TILE",
+        PCIE_ENDPOINT_TYPE      => PCIE_MOD_ARCH,
         PCIE_ENDPOINT_MODE      => PCIE_ENDPOINT_MODE,
 
         DMA_ENDPOINTS           => DMA_ENDPOINTS,

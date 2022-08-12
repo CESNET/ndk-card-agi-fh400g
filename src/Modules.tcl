@@ -5,7 +5,7 @@
 
 # Globally defined variables
 global CARD_COMMON_BASE
-global ETH_ENABLE
+global NET_MOD_ARCH
 global ETH_PORT_SPEED
 global BOARD
 set BOARD "400G1"
@@ -21,7 +21,7 @@ set MOD "$MOD $ENTITY_BASE/ip/sodimm_cal.ip"
 set MOD "$MOD $ENTITY_BASE/ip/OnBoard_DDR4.ip"
 set MOD "$MOD $ENTITY_BASE/ip/emif_agi027_cal.ip"
 
-if {$ETH_ENABLE} {
+if {$NET_MOD_ARCH == "F_TILE"} {
     if {$ETH_PORT_SPEED(0) == 400} {
         set MOD "$MOD $ENTITY_BASE/ip/ftile_pll_1x400g.ip"
         set MOD "$MOD $ENTITY_BASE/ip/ftile_eth_1x400g.ip"

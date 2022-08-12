@@ -18,6 +18,12 @@ source $OFM_PATH/build/VhdlPkgGen.tcl
 source $OFM_PATH/build/Shared.tcl
 
 set CARD_NAME "400G1"
+# Achitecture of Clock generator
+set CLOCK_GEN_ARCH "INTEL"
+# Achitecture of PCIe module
+set PCIE_MOD_ARCH "R_TILE"
+# Achitecture of Network module
+set NET_MOD_ARCH "F_TILE"
 
 VhdlPkgBegin
 

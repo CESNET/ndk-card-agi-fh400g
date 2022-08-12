@@ -49,7 +49,7 @@ if {$PCIE_HIPS == 2} {
     set SYNTH_FLAGS(CONSTR) "$SYNTH_FLAGS(CONSTR) $CARD_BASE/constr/pcie2_virtual.qsf"
 }
 
-if {$ETH_ENABLE} {
+if {$NET_MOD_ARCH == "F_TILE"} {
     set SYNTH_FLAGS(CONSTR) "$SYNTH_FLAGS(CONSTR) $CARD_BASE/constr/qsfp.qsf"
 } else {
     set SYNTH_FLAGS(CONSTR) "$SYNTH_FLAGS(CONSTR) $CARD_BASE/constr/qsfp_virtual.qsf"
