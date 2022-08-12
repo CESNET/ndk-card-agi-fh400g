@@ -37,8 +37,8 @@ set_global_assignment -name ACTIVE_SERIAL_CLOCK AS_FREQ_115MHZ_IOSC
 set_global_assignment -name GENERATE_COMPRESSED_SOF ON
 set_global_assignment -name PWRMGT_VOLTAGE_OUTPUT_FORMAT "LINEAR FORMAT"
 set_global_assignment -name PWRMGT_LINEAR_FORMAT_N "-13"
-#set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "ACTIVE SERIAL X4"
-set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "AVST X32"
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "ACTIVE SERIAL X4"
+#set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "AVST X32"
 
 set_global_assignment -name VERILOG_MACRO "ALTERA_EMIF_ENABLE_ISSP=1"
 
