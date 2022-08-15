@@ -17,7 +17,7 @@ set CARD_COMMON_BASE $COMBO_BASE/ndk/core/intel
 source $OFM_PATH/build/VhdlPkgGen.tcl
 source $OFM_PATH/build/Shared.tcl
 
-set CARD_NAME "400G1"
+set CARD_NAME "COMBO-400G1"
 # Achitecture of Clock generator
 set CLOCK_GEN_ARCH "INTEL"
 # Achitecture of PCIe module
