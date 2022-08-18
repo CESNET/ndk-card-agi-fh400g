@@ -10,7 +10,12 @@ global ETH_PORT_SPEED
 global BOARD
 set BOARD "400G1"
 
-set COMPONENTS [list [list "FPGA_COMMON" $CARD_COMMON_BASE $BOARD]]
+# Paths
+set BOOT_CTRL_BASE "$OFM_PATH/../core/intel/src/comp/boot_ctrl"
+
+# Components
+lappend COMPONENTS [list "FPGA_COMMON" $CARD_COMMON_BASE $BOARD]
+lappend COMPONENTS [list "BOOT_CTRL"   $BOOT_CTRL_BASE   "FULL"]
 
 # IP sources
 set MOD "$MOD $ENTITY_BASE/ip/iopll_ip.ip"

@@ -387,6 +387,7 @@ architecture FULL of FPGA is
     constant MEM_DATA_WIDTH  : integer := 512;
     constant MEM_BURST_WIDTH : integer := 7;
     constant AMM_FREQ_KHZ    : integer := 333333; --HPS:3333325, SODIMM:3333325;
+    constant DEVICE          : string  := "AGILEX";
 
     signal pcie_ext_clk0_p        : std_logic;
     signal pcie_ext_clk1_p        : std_logic;
@@ -428,8 +429,23 @@ architecture FULL of FPGA is
     signal misc_in                : std_logic_vector(MISC_IN_WIDTH-1 downto 0);
     signal misc_out               : std_logic_vector(MISC_OUT_WIDTH-1 downto 0);
 
-    signal flash_rst              : std_logic;
-    signal flash_clk              : std_logic;
+    signal pcie_clk               : std_logic;
+    signal pcie_reset             : std_logic;
+
+    signal boot_mi_clk            : std_logic;
+    signal boot_mi_reset          : std_logic;
+    signal boot_mi_dwr            : std_logic_vector(31 downto 0);
+    signal boot_mi_addr           : std_logic_vector(31 downto 0);
+    signal boot_mi_rd             : std_logic;
+    signal boot_mi_wr             : std_logic;
+    signal boot_mi_be             : std_logic_vector(3 downto 0);
+    signal boot_mi_drd            : std_logic_vector(31 downto 0);
+    signal boot_mi_ardy           : std_logic;
+    signal boot_mi_drdy           : std_logic;
+
+    signal boot_request           : std_logic;
+    signal boot_image             : std_logic;
+
     signal flash_wr_data          : std_logic_vector(63 downto 0);
     signal flash_rd_data          : std_logic_vector(63 downto 0);
     signal flash_wr_en            : std_logic;
@@ -451,8 +467,8 @@ begin
     -- Must not be permanently assigned to GND!
     AG_M10_REBOOT_N  <= '1';
 
-    AG_CFG_IMG_SEL <= misc_out(3);
-    AG_REQ_CONF_N  <= not misc_out(2);
+    AG_CFG_IMG_SEL <= boot_image;
+    AG_REQ_CONF_N  <= not boot_request;
 
     PCIE1_CLK_SEL_N	<= '1';
     PCIE2_CLK_SEL_N	<= '1';
@@ -508,7 +524,7 @@ begin
         MISC_OUT_WIDTH          => MISC_OUT_WIDTH,
 
         BOARD                   => "400G1",
-        DEVICE                  => "AGILEX",
+        DEVICE                  => DEVICE,
 
         PCIE_ENDPOINTS          => PCIE_ENDPOINTS,
         PCIE_ENDPOINT_TYPE      => PCIE_MOD_ARCH,
@@ -578,18 +594,61 @@ begin
         STATUS_LED_G            => AG_LED_G,
         STATUS_LED_R            => AG_LED_R,
 
+        PCIE_CLK                => pcie_clk,
+        PCIE_RESET              => pcie_reset,
+    
+        BOOT_MI_CLK             => boot_mi_clk,
+        BOOT_MI_RESET           => boot_mi_reset,
+        BOOT_MI_DWR             => boot_mi_dwr,
+        BOOT_MI_ADDR            => boot_mi_addr,
+        BOOT_MI_RD              => boot_mi_rd,
+        BOOT_MI_WR              => boot_mi_wr,
+        BOOT_MI_BE              => boot_mi_be,
+        BOOT_MI_DRD             => boot_mi_drd,
+        BOOT_MI_ARDY            => boot_mi_ardy,
+        BOOT_MI_DRDY            => boot_mi_drdy,
+
         MISC_IN                 => misc_in,
         MISC_OUT                => misc_out
     );
 
     -- ---------------------------------------------------------------------------
+
+    boot_ctrl_i : entity work.BOOT_CTRL
+    generic map(
+        DEVICE      => DEVICE,
+        BOOT_TYPE   => 2
+    )
+    port map(
+        MI_CLK        => boot_mi_clk,
+        MI_RESET      => boot_mi_reset,
+        MI_DWR        => boot_mi_dwr,
+        MI_ADDR       => boot_mi_addr,
+        MI_BE         => boot_mi_be,
+        MI_RD         => boot_mi_rd,
+        MI_WR         => boot_mi_wr,
+        MI_ARDY       => boot_mi_ardy,
+        MI_DRD        => boot_mi_drd,
+        MI_DRDY       => boot_mi_drdy,
+
+        BOOT_CLK      => pcie_clk,
+        BOOT_RESET    => pcie_reset,
+
+        BOOT_REQUEST  => boot_request,
+        BOOT_IMAGE    => boot_image,
+
+        FLASH_WR_DATA => flash_wr_data,
+        FLASH_WR_EN   => flash_wr_en,
+        FLASH_RD_DATA => flash_rd_data
+    ); 
+
     FLASHCTRL_I: entity work.flashctrl
     generic map (
         CLK_PERIOD => 2 -- Clock period time in ns
     )
     port map (
-        RESET  => flash_rst,
-        CLK    => flash_clk,
+        RESET  => pcie_reset,
+        CLK    => pcie_clk,
         -- Command interface
         DWR    => flash_wr_data,
         DWR_WR => flash_wr_en,
@@ -609,12 +668,6 @@ begin
     -- flash_wr_data(59) is the highest address bit. It is used to select beetween FLASH0 and FLASH1 chips
     FLASH_CE0_N <= flash_ce_n or (flash_wr_data(59));
     FLASH_CE1_N <= flash_ce_n or (not flash_wr_data(59));
-
-    misc_in       <= flash_rd_data;
-    flash_clk     <= misc_out(0);
-    flash_rst     <= misc_out(1);
-    flash_wr_en   <= misc_out(4);
-    flash_wr_data <= misc_out(64+5-1 downto 5);
 
     -- ---------------------------------------------------------------------------
 
