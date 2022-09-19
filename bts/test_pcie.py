@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # Copyright (C) 2022 CESNET z. s. p. o.
 # Author(s): Jakub Cabal <cabal@cesnet.cz>
+#
+# SPDX-License-Identifier: BSD-3-Clause
 
 import time
 import random

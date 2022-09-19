@@ -1,6 +1,8 @@
 -- fpga.vhd: XpressSX AGI-FH400G card top-level entity and architecture
 -- Copyright (C) 2022 CESNET z. s. p. o.
 -- Author(s): Jakub Cabal <cabal@cesnet.cz>
+--
+-- SPDX-License-Identifier: BSD-3-Clause
 
 library ieee;
 use ieee.std_logic_1164.all;

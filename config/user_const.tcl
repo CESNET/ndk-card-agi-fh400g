@@ -2,6 +2,7 @@
 # Copyright (C) 2019 CESNET z. s. p. o.
 # Author(s): Jakub Cabal <cabal@cesnet.cz>
 #
+# SPDX-License-Identifier: BSD-3-Clause
 
 # Source default common values
 source $CARD_COMMON_BASE/config/user_const.tcl

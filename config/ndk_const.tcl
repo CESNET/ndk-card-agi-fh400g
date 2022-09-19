@@ -2,6 +2,7 @@
 # Copyright (C) 2021 CESNET, z. s. p. o.
 # Author(s): Jakub Cabal <cabal@cesnet.cz>
 #
+# SPDX-License-Identifier: BSD-3-Clause
 
 set OFM_PATH        $env(OFM_PATH)
 set FIRMWARE_BASE   $env(FIRMWARE_BASE)

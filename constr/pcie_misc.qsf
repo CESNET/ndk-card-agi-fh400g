@@ -1,6 +1,8 @@
 # pcie_misc.qsf
 # Copyright (C) 2022 CESNET z. s. p. o.
 # Author(s): Jakub Cabal <cabal@cesnet.cz>
+#
+# SPDX-License-Identifier: BSD-3-Clause
 
 # ==============================================================================
 #  Pinout and IO Standards
