@@ -2,6 +2,8 @@
 #
 # Copyright (C) 2022 CESNET z. s. p. o.
 # Author(s): Jakub Cabal <cabal@cesnet.cz>
+#
+# SPDX-License-Identifier: BSD-3-Clause
 
 # configuration
 cable_index=1 # use jtagconfig command for check cable index

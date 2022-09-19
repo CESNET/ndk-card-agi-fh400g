@@ -1,6 +1,8 @@
 # pcie1_virtual.qsf
 # Copyright (C) 2022 CESNET z. s. p. o.
 # Author(s): Jakub Cabal <cabal@cesnet.cz>
+#
+# SPDX-License-Identifier: BSD-3-Clause
 
 set_instance_assignment -name VIRTUAL_PIN ON -to PCIE1_PERST_N
 set_instance_assignment -name VIRTUAL_PIN ON -to PCIE1_CLK0_P

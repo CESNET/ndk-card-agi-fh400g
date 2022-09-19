@@ -9,7 +9,7 @@ Additional repositories are needed to build the NDK design for the FPGA:
 
 ## License
 
-The content of this repository is under a closed license. Please read [LICENSE file](LICENSE).
+Unless otherwise noted, the content of this repository is available under the BSD 3-Clause License. Please read [LICENSE file](LICENSE).
 
 - The .ip files located in the `src/ip/` folder were generated in Intel Quartus Prime Pro, and their use may be subject to additional license agreements.
 
