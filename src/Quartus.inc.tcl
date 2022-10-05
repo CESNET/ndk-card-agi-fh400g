@@ -6,7 +6,7 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 # NDK constants (populates all NDK variables from env)
-source $env(CARD_CONST)
+source $env(CORE_BASE)/config/core_bootstrap.tcl
 
 # Include card common script
 source $CORE_BASE/Quartus.inc.tcl
