@@ -1,18 +1,34 @@
 # Quartus.inc.tcl: Quartus.tcl include for XpressSX AGI-FH400G
-# Copyright (C) 2021 CESNET z. s. p. o.
+# Copyright (C) 2022 CESNET z. s. p. o.
 # Author(s): Jakub Cabal <cabal@cesnet.cz>
+#           Vladislav Valek <valekv@cesnet.cz>
 #
 # SPDX-License-Identifier: BSD-3-Clause
 
 # NDK constants (populates all NDK variables from env)
-source $env(NDK_CONST)
+source $env(CARD_CONST)
 
 # Include card common script
-source $CARD_COMMON_BASE/Quartus.inc.tcl
+source $CORE_BASE/Quartus.inc.tcl
+
+# Propagating card constants to the Modules.tcl files of the underlying components.
+# The description of usage of this array is provided in the configuration section
+# of the NDK-CORE repository.
+set CARD_ARCHGRP(CORE_BASE)         $CORE_BASE
+set CARD_ARCHGRP(NET_MOD_ARCH)      $NET_MOD_ARCH
+# Second dimension because of addition of an element of another array, just for clarity.
+set CARD_ARCHGRP(ETH_PORT_SPEED,0)  $ETH_PORT_SPEED(0)
+
+# make lists from associative arrays
+set CARD_ARCHGRP_L [array get CARD_ARCHGRP]
+set CORE_ARCHGRP_L [array get CORE_ARCHGRP]
+
+# concatenate lists to be handed as a part of the ARCHGRP to the TOPLEVEL
+set ARCHGRP_ALL [concat $CARD_ARCHGRP_L $CORE_ARCHGRP_L]
 
 # Main component
 lappend HIERARCHY(COMPONENTS) \
-    [list "TOPLEVEL" $CARD_BASE/src "FULL"]
+    [list "TOPLEVEL" $CARD_BASE/src $ARCHGRP_ALL]
 
 # Design parameters
 set SYNTH_FLAGS(MODULE)    "FPGA"
