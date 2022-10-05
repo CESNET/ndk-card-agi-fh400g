@@ -5,7 +5,7 @@
 #
 # SPDX-License-Identifier: BSD-3-Clause
 
-# NOTE: For the detailed description of this file, visit the Configuration section
+# NOTE: For the detailed description of this file, visit the Parametrization section
 # in the documentation of the NDK-CORE repository.
 #
 # Mandatory project parameters
@@ -31,7 +31,6 @@ set PCIE_ENDPOINTS     4
 # 1 = 2x8 lanes (bifurcation x8+x8)
 set PCIE_ENDPOINT_MODE 1
 
-
 # ------------------------------------------------------------------------------
 # DMA parameters:
 # ------------------------------------------------------------------------------
@@ -42,12 +41,10 @@ set DMA_TX_CHANNELS      32
 # In non-blocking mode, packets are dropped whenever they cannot be sent.
 set DMA_RX_BLOCKING_MODE true
 
-
 # ------------------------------------------------------------------------------
 # DDR4 parameters:
 # ------------------------------------------------------------------------------
 set MEM_PORTS 2
-
 
 # ------------------------------------------------------------------------------
 # Other parameters:

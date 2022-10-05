@@ -12,7 +12,7 @@ source $env(CORE_BASE)/config/core_bootstrap.tcl
 source $CORE_BASE/Quartus.inc.tcl
 
 # Propagating card constants to the Modules.tcl files of the underlying components.
-# The description of usage of this array is provided in the configuration section
+# The description of usage of this array is provided in the Parametrization section
 # of the NDK-CORE repository.
 set CARD_ARCHGRP(CORE_BASE)         $CORE_BASE
 set CARD_ARCHGRP(NET_MOD_ARCH)      $NET_MOD_ARCH
