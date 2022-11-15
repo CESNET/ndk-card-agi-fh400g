@@ -31,8 +31,17 @@ lappend HIERARCHY(COMPONENTS) \
     [list "TOPLEVEL" $CARD_BASE/src $ARCHGRP_ALL]
 
 # Design parameters
-set SYNTH_FLAGS(MODULE)    "FPGA"
-set SYNTH_FLAGS(FPGA)      "AGIB027R29A1E2VR0"
+set SYNTH_FLAGS(MODULE) "FPGA"
+
+if {$BOARD_REV == 0} {
+    # first prototypes
+    set SYNTH_FLAGS(FPGA) "AGIB027R29A1E2VR0"
+} elseif {$BOARD_REV == 1} {
+    set SYNTH_FLAGS(FPGA) "AGIB027R29A1E2VR3"
+} else {
+    error "Unsupported BOARD_REV=$BOARD_REV! Supported values are: 0 or 1."
+}
+
 set SYNTH_FLAGS(BITSTREAM) "RBF"
 # Enable Quartus Support-Logic Generation stage
 set SYNTH_FLAGS(QUARTUS_TLG) 1

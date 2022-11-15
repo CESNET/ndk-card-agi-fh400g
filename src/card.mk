@@ -20,6 +20,9 @@ OUTPUT_NAME ?= agi-fh400g
 
 USER_ENV ?=
 
+# Default board revision
+BOARD_REV ?= 0
+
 # Private parameters (do not change these values in user Makefile)
 ###############################################################################
 
@@ -39,6 +42,7 @@ NETCOPE_ENV = \
 	ETH_PORT_SPEED=$(ETH_PORT_SPEED) \
     ETH_PORT_CHAN=$(ETH_PORT_CHAN) \
 	DMA_TYPE=$(DMA_TYPE) \
+	BOARD_REV=$(BOARD_REV) \
 	$(USER_ENV)
 
 include $(CORE_BASE)/core.mk

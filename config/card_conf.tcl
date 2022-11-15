@@ -72,5 +72,7 @@ set MEM_PORTS 2
 # ------------------------------------------------------------------------------
 set TSU_ENABLE false
 
+set BOARD_REV $env(BOARD_REV)
+
 set TEST_FW_PCIE1_ONBOARD_DDR4 false
 
