@@ -19,6 +19,11 @@ set NET_MOD_ARCH "F_TILE"
 # Achitecture of SDM/SYSMON module
 set SDM_SYSMON_ARCH "INTEL_SDM"
 
+# Total number of QSFP cages
+set QSFP_CAGES       1
+# I2C address of each QSFP cage
+set QSFP_I2C_ADDR(0) "0xA0"
+
 # ------------------------------------------------------------------------------
 # Other parameters:
 # ------------------------------------------------------------------------------
