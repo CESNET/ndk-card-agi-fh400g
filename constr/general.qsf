@@ -10,8 +10,6 @@
 
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
-set_global_assignment -name DEVICE AGIB027R29A1E2VR0
-set_global_assignment -name FAMILY Agilex
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
 set_global_assignment -name DEVICE_IO_STANDARD_ALL "1.2 V"
