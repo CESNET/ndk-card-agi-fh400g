@@ -35949,7 +35949,7 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="link_fault_mode_gui" type="string">
           <ipxact:name>link_fault_mode_gui</ipxact:name>
           <ipxact:displayName>Link fault generation option</ipxact:displayName>
-          <ipxact:value>Off</ipxact:value>
+          <ipxact:value>Bidirectional</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="rx_bytes_to_remove_gui" type="string">
           <ipxact:name>rx_bytes_to_remove_gui</ipxact:name>

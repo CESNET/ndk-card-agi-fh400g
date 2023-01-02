@@ -57077,7 +57077,7 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="link_fault_mode_gui" type="string">
           <ipxact:name>link_fault_mode_gui</ipxact:name>
           <ipxact:displayName>Link fault generation option</ipxact:displayName>
-          <ipxact:value>Off</ipxact:value>
+          <ipxact:value>Bidirectional</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="rx_bytes_to_remove_gui" type="string">
           <ipxact:name>rx_bytes_to_remove_gui</ipxact:name>
@@ -57147,7 +57147,7 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="PACKING_EN_GUI" type="int">
           <ipxact:name>PACKING_EN_GUI</ipxact:name>
           <ipxact:displayName>Enable TX Packing</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
+          <ipxact:value>1</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="enable_async_adapters_gui" type="int">
           <ipxact:name>enable_async_adapters_gui</ipxact:name>
