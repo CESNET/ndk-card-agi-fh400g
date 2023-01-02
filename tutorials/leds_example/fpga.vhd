@@ -56,15 +56,15 @@ port (
     -- =========================================================================
     -- Agilex can requested FPGA reboot via MAX10
     AG_CFG_IMG_SEL   : out   std_logic;	-- Agilex image selection
-    AG_REQ_CONF_N    : out   std_logic -- Agilex configuration reuest
+    AG_REQ_CONF_N    : out   std_logic; -- Agilex configuration reuest
 
     -- =========================================================================
     --  FLASH INTERFACE (disable for now, QSPI flash used by default)
     -- =========================================================================
     --FLASH_A                 : out   std_logic_vector(26 downto 0); -- Memory Address bus
     --FLASH_D                 : inout std_logic_vector(15 downto 0); -- Memory Data bus
-    --FLASH_CE0_N             : out   std_logic;                     -- Memory 0 Chip Enable (active is LOW)
-    --FLASH_CE1_N             : out   std_logic;                     -- Memory 0 Chip Enable (active is LOW)
+    FLASH_CE0_N             : out   std_logic;                     -- Memory 0 Chip Enable (active is LOW)
+    FLASH_CE1_N             : out   std_logic                      -- Memory 0 Chip Enable (active is LOW)
     --FLASH_OE_N              : out   std_logic;                     -- Memory Output Enable (both, active is LOW)
     --FLASH_WE_N              : out   std_logic;                     -- Memory Write Enable (both, active is LOW)
     --FLASH_RY_BY_N           : in    std_logic;                     -- Memory Ready/busy signal (both)
@@ -266,6 +266,10 @@ architecture FULL of FPGA is
     signal counter1          : unsigned(COUNTER_W-1 downto 0);
 
 begin
+
+    -- Disable access to flash memory
+    FLASH_CE0_N <= '1';
+    FLASH_CE1_N <= '1';
 
     AG_I2C_SCLK	<= 'Z';
     AG_I2C_SDA	<= 'Z';
