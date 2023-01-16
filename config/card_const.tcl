@@ -1,7 +1,7 @@
 # card_const.tcl: Card specific parameters for XpressSX AGI-FH400G (developer only)
 # Copyright (C) 2022 CESNET, z. s. p. o.
 # Author(s): Jakub Cabal <cabal@cesnet.cz>
-# 			 Vladislav Valek <valekv@cesnet.cz>
+#            Vladislav Valek <valekv@cesnet.cz>
 #
 # SPDX-License-Identifier: BSD-3-Clause
 
@@ -35,14 +35,18 @@ if { $BOARD_REV != 0 && $BOARD_REV != 1 } {
 if {!(($PCIE_ENDPOINTS == 2 && $PCIE_GEN == 4 && $PCIE_ENDPOINT_MODE == 1) ||
       ($PCIE_ENDPOINTS == 4 && $PCIE_GEN == 4 && $PCIE_ENDPOINT_MODE == 1) ||
       ($PCIE_ENDPOINTS == 2 && $PCIE_GEN == 5 && $PCIE_ENDPOINT_MODE == 1)) } {
-    error "Incompatible PCIe configuration: PCIE_ENDPOINTS = $PCIE_ENDPOINTS, PCIE_GEN = $PCIE_GEN, PCIE_ENDPOINT_MODE = $PCIE_ENDPOINT_MODE!"
+    error "Incompatible PCIe configuration: PCIE_ENDPOINTS = $PCIE_ENDPOINTS, PCIE_GEN = $PCIE_GEN, PCIE_ENDPOINT_MODE = $PCIE_ENDPOINT_MODE!
+Allowed PCIe configurations:
+- 1xGen5x8x8 -- PCIE_GEN=5, PCIE_ENDPOINTS=2, PCIE_ENDPOINT_MODE=1
+- 2xGen4x8x8 -- PCIE_GEN=4, PCIE_ENDPOINTS=4, PCIE_ENDPOINT_MODE=1
+- 1xGen4x8x8 -- PCIE_GEN=4, PCIE_ENDPOINTS=2, PCIE_ENDPOINT_MODE=1"
 }
 
 # ------------------------------------------------------------------------------
 # Other parameters:
 # ------------------------------------------------------------------------------
 if {$TEST_FW_PCIE1_ONBOARD_DDR4} {
-	set MEM_PORTS 1
+    set MEM_PORTS 1
 }
 
 VhdlPkgBool TEST_FW_PCIE1_ONBOARD_DDR4 $TEST_FW_PCIE1_ONBOARD_DDR4
