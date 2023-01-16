@@ -38,17 +38,27 @@ set ETH_PORT_LANES(0)  8
 # 2x PCIe Gen4 x8x8 -- PCIE_GEN=4, PCIE_ENDPOINTS=4, PCIE_ENDPOINT_MODE=1 (Note: default configuration)
 # 1x PCIe Gen4 x8x8 -- PCIE_GEN=4, PCIE_ENDPOINTS=2, PCIE_ENDPOINT_MODE=1 (Note: limited DMA performance)
 # ------------------------------------------------------------------------------
+
+# Set default PCIe configuration
+set PCIE_CONF "2xGen4x8x8"
+if { [info exist env(PCIE_CONF)] } {
+    set PCIE_CONF $env(PCIE_CONF)
+}
+
+# Parsing PCIE_CONF string to list of parameters
+set pcie_conf_list [ParsePcieConf $PCIE_CONF]
+
 # PCIe Generation (possible values: 4, 5):
 # 4 = PCIe Gen4 (Stratix 10 with P-Tile or Agilex)
 # 5 = PCIe Gen5 (Agilex with R-Tile)
-set PCIE_GEN           4
+set PCIE_GEN           [lindex $pcie_conf_list 1]
 # PCIe endpoints (possible values: 2, 4):
 # 2 = 2x PCIe x16 in two slot OR 2x PCIe x8 in one slot (bifurcation x8+x8)
 # 4 = 4x PCIe x8 in two slots (bifurcation x8+x8)
-set PCIE_ENDPOINTS     4
+set PCIE_ENDPOINTS     [lindex $pcie_conf_list 0]
 # PCIe endpoint mode (possible values: 1):
 # 1 = 2x8 lanes (bifurcation x8+x8)
-set PCIE_ENDPOINT_MODE 1
+set PCIE_ENDPOINT_MODE [lindex $pcie_conf_list 2]
 
 # ------------------------------------------------------------------------------
 # DMA parameters:

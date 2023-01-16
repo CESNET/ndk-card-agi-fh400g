@@ -32,6 +32,12 @@ if { $BOARD_REV != 0 && $BOARD_REV != 1 } {
     error "Incompatible BOARD_REV value: $BOARD_REV"
 }
 
+if {!(($PCIE_ENDPOINTS == 2 && $PCIE_GEN == 4 && $PCIE_ENDPOINT_MODE == 1) ||
+      ($PCIE_ENDPOINTS == 4 && $PCIE_GEN == 4 && $PCIE_ENDPOINT_MODE == 1) ||
+      ($PCIE_ENDPOINTS == 2 && $PCIE_GEN == 5 && $PCIE_ENDPOINT_MODE == 1)) } {
+    error "Incompatible PCIe configuration: PCIE_ENDPOINTS = $PCIE_ENDPOINTS, PCIE_GEN = $PCIE_GEN, PCIE_ENDPOINT_MODE = $PCIE_ENDPOINT_MODE!"
+}
+
 # ------------------------------------------------------------------------------
 # Other parameters:
 # ------------------------------------------------------------------------------
