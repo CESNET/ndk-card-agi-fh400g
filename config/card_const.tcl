@@ -9,7 +9,7 @@
 # the description of this file, visit the Parametrization section in the
 # documentation of the NDK-CORE repostiory
 
-set CARD_NAME "COMBO-400G1"
+set CARD_NAME "AGI-FH400G-REV$BOARD_REV"
 # Achitecture of Clock generator
 set CLOCK_GEN_ARCH "INTEL"
 # Achitecture of PCIe module
