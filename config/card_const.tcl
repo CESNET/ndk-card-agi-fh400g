@@ -18,6 +18,8 @@ set PCIE_MOD_ARCH "R_TILE"
 set NET_MOD_ARCH "F_TILE"
 # Achitecture of SDM/SYSMON module
 set SDM_SYSMON_ARCH "INTEL_SDM"
+# Boot controller type
+set BOOT_TYPE 2
 
 # Total number of QSFP cages
 set QSFP_CAGES       1
