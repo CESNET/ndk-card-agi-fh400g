@@ -35,6 +35,7 @@ if {$ARCHGRP_ARR(NET_MOD_ARCH) == "F_TILE"} {
     }
     if {$ARCHGRP_ARR(ETH_PORT_SPEED,0) == 100} {
         set MOD "$MOD $ENTITY_BASE/ip/ftile_pll_4x100g.ip"
+        set MOD "$MOD $ENTITY_BASE/ip/ftile_eth_2x100g.ip"
         set MOD "$MOD $ENTITY_BASE/ip/ftile_eth_4x100g.ip"
     }
     if {$ARCHGRP_ARR(ETH_PORT_SPEED,0) == 50} {
