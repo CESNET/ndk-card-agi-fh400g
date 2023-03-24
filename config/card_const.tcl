@@ -49,6 +49,18 @@ Allowed PCIe configurations:
 # ------------------------------------------------------------------------------
 # Other parameters:
 # ------------------------------------------------------------------------------
+
+if {$ETH_PORT_SPEED(0) == 10 || $ETH_PORT_SPEED(0) == 25 || $ETH_PORT_SPEED(0) == 40} {
+    # TBD lower frequency for 10GE, 40GE? 
+    #set TSU_FREQUENCY 161132812
+    # Current setup:
+    # 10GE, 25GE, 40GE in F-Tile
+    set TSU_FREQUENCY 402832031
+} else {
+    # 400GE, 200GE, 100GE, 50GE in F-Tile
+    set TSU_FREQUENCY 415039062
+}
+
 if {$TEST_FW_PCIE1_ONBOARD_DDR4} {
     set MEM_PORTS 1
 }

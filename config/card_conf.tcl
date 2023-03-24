@@ -80,7 +80,7 @@ set MEM_PORTS 2
 # ------------------------------------------------------------------------------
 # Other parameters:
 # ------------------------------------------------------------------------------
-set TSU_ENABLE false
+set TSU_ENABLE true
 
 set BOARD_REV $env(BOARD_REV)
 
