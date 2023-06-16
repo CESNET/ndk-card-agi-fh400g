@@ -46,6 +46,8 @@ if {$BOARD_REV == 0} {
 set SYNTH_FLAGS(BITSTREAM) "RBF"
 # Enable Quartus Support-Logic Generation stage
 set SYNTH_FLAGS(QUARTUS_TLG) 1
+# Enable automatic clear old IP files before IP Generation
+set SYNTH_FLAGS(IP_FILES_CLEAN_ENABLE) 1
 
 # QSF constraints for specific parts of the design
 set SYNTH_FLAGS(CONSTR) ""
