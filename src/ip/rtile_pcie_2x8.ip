@@ -16,14 +16,14 @@ https://fpgasoftware.intel.com/eula.-->
   <ipxact:vendor>Intel Corporation</ipxact:vendor>
   <ipxact:library>rtile_pcie_2x8</ipxact:library>
   <ipxact:name>intel_rtile_pcie_ast_0</ipxact:name>
-  <ipxact:version>4.0.0</ipxact:version>
+  <ipxact:version>8.0.0</ipxact:version>
   <ipxact:busInterfaces>
     <ipxact:busInterface>
       <ipxact:name>p0_rx_st0</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="avalon_streaming" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="avalon_streaming" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="avalon_streaming" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="avalon_streaming" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -152,10 +152,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p0_rx_st_misc</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -341,10 +341,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p0_rx_st1</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="avalon_streaming" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="avalon_streaming" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="avalon_streaming" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="avalon_streaming" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -465,10 +465,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p0_tx_st_misc</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -622,10 +622,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p0_tx_st0</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="avalon_streaming" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="avalon_streaming" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="avalon_streaming" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="avalon_streaming" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -746,10 +746,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p0_tx_st1</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="avalon_streaming" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="avalon_streaming" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="avalon_streaming" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="avalon_streaming" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -862,10 +862,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p0_tx_ehp</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -899,10 +899,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p1_rx_st0</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="avalon_streaming" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="avalon_streaming" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="avalon_streaming" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="avalon_streaming" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -1031,10 +1031,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p1_rx_st_misc</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -1220,10 +1220,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p1_rx_st1</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="avalon_streaming" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="avalon_streaming" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="avalon_streaming" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="avalon_streaming" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -1344,10 +1344,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p1_tx_st_misc</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -1501,10 +1501,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p1_tx_st0</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="avalon_streaming" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="avalon_streaming" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="avalon_streaming" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="avalon_streaming" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -1625,10 +1625,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p1_tx_st1</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="avalon_streaming" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="avalon_streaming" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="avalon_streaming" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="avalon_streaming" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -1741,10 +1741,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p1_tx_ehp</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -1778,10 +1778,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p0_reset_status_n</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="reset" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="reset" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="reset" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="reset" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -1820,10 +1820,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p0_slow_reset_status_n</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="reset" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="reset" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="reset" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="reset" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -1862,10 +1862,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p0_hip_status</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -1939,10 +1939,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p0_power_mgnt</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -1976,10 +1976,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p0_pld_gp</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -2029,10 +2029,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p0_cii</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -2130,10 +2130,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p1_reset_status_n</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="reset" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="reset" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="reset" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="reset" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -2172,10 +2172,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p1_slow_reset_status_n</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="reset" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="reset" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="reset" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="reset" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -2214,10 +2214,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p1_hip_status</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -2291,10 +2291,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p1_power_mgnt</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -2328,10 +2328,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p1_pld_gp</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -2381,10 +2381,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>p1_cii</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -2482,10 +2482,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>hip_serial</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -3023,10 +3023,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>refclk0</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="clock" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="clock" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -3060,10 +3060,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>refclk1</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="clock" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="clock" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -3097,10 +3097,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>coreclkout_hip</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="clock" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="clock" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -3144,10 +3144,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>ninit_done</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="reset" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="reset" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="reset" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="reset" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -3176,10 +3176,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>slow_clk</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="clock" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="clock" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="clock" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -3223,10 +3223,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>pin_perst</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -6484,7 +6484,7 @@ https://fpgasoftware.intel.com/eula.-->
       <ipxact:vendor>Intel Corporation</ipxact:vendor>
       <ipxact:library>rtile_pcie_2x8</ipxact:library>
       <ipxact:name>intel_rtile_pcie_ast</ipxact:name>
-      <ipxact:version>4.0.0</ipxact:version>
+      <ipxact:version>8.0.0</ipxact:version>
     </altera:entity_info>
     <altera:altera_module_parameters>
       <ipxact:parameters>
@@ -6555,7 +6555,7 @@ https://fpgasoftware.intel.com/eula.-->
         </ipxact:parameter>
         <ipxact:parameter parameterId="chosen_devkit_hwtcl" type="string">
           <ipxact:name>chosen_devkit_hwtcl</ipxact:name>
-          <ipxact:displayName>Current development kit:</ipxact:displayName>
+          <ipxact:displayName>Development kit</ipxact:displayName>
           <ipxact:value>NONE</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="top_topology_hwtcl" type="string">
@@ -6638,19 +6638,24 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:displayName>Enable ASPM control</ipxact:displayName>
           <ipxact:value>No ASPM Support</ipxact:value>
         </ipxact:parameter>
-        <ipxact:parameter parameterId="virtual_l1sub_support_hwtcl" type="int">
-          <ipxact:name>virtual_l1sub_support_hwtcl</ipxact:name>
-          <ipxact:displayName>Enable L1 Substate</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
-        </ipxact:parameter>
         <ipxact:parameter parameterId="virtual_dmwr_support_hwtcl" type="int">
           <ipxact:name>virtual_dmwr_support_hwtcl</ipxact:name>
           <ipxact:displayName>Enable Deferrable Memory Write (DMWr)</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
+        <ipxact:parameter parameterId="rtile_debug_toolkit_hwtcl" type="int">
+          <ipxact:name>rtile_debug_toolkit_hwtcl</ipxact:name>
+          <ipxact:displayName>Enable Debug Toolkit</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="rtile_enable_pciess_register_access_hwtcl" type="int">
+          <ipxact:name>rtile_enable_pciess_register_access_hwtcl</ipxact:name>
+          <ipxact:displayName>Enable PCIeSS register access via debug toolkit</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
         <ipxact:parameter parameterId="xcvr_reconfig_hwtcl" type="int">
           <ipxact:name>xcvr_reconfig_hwtcl</ipxact:name>
-          <ipxact:displayName>Enable PHY Reconfiguration</ipxact:displayName>
+          <ipxact:displayName>Enable PHY Reconfiguration Interface</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="bfm_drive_interface_clk_hwtcl" type="int">
@@ -6678,6 +6683,11 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:displayName>serial_sim_hwtcl</ipxact:displayName>
           <ipxact:value>1</ipxact:value>
         </ipxact:parameter>
+        <ipxact:parameter parameterId="generating_ed_hwtcl" type="int">
+          <ipxact:name>generating_ed_hwtcl</ipxact:name>
+          <ipxact:displayName>generating_ed_hwtcl</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
         <ipxact:parameter parameterId="hssi_ctr_active_lane_octet0_user_hwtcl" type="string">
           <ipxact:name>hssi_ctr_active_lane_octet0_user_hwtcl</ipxact:name>
           <ipxact:displayName>Octet0 Active Lanes</ipxact:displayName>
@@ -6703,15 +6713,20 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:displayName>Octet Application Speed</ipxact:displayName>
           <ipxact:value>Gen5</ipxact:value>
         </ipxact:parameter>
+        <ipxact:parameter parameterId="hssi_ctr_independent_pcie_x8x8_user_hwtcl" type="int">
+          <ipxact:name>hssi_ctr_independent_pcie_x8x8_user_hwtcl</ipxact:name>
+          <ipxact:displayName>Enable Independent Refclk</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="independent_perst_hwtcl" type="int">
+          <ipxact:name>independent_perst_hwtcl</ipxact:name>
+          <ipxact:displayName>Enable Independent Perst</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
         <ipxact:parameter parameterId="hrc_pin_perst_is_full_rst_hwtcl" type="string">
           <ipxact:name>hrc_pin_perst_is_full_rst_hwtcl</ipxact:name>
           <ipxact:displayName>Full reset when Pin_perst is toggled</ipxact:displayName>
           <ipxact:value>full_reset</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="hrc_cpll_ena_warm_reset_hwtcl" type="string">
-          <ipxact:name>hrc_cpll_ena_warm_reset_hwtcl</ipxact:name>
-          <ipxact:displayName>Reset CPLL in warm reset</ipxact:displayName>
-          <ipxact:value>disable</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="hssi_ctr_htol_user_hwtcl" type="int">
           <ipxact:name>hssi_ctr_htol_user_hwtcl</ipxact:name>
@@ -6746,11 +6761,6 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="qhip_mmio_enable_hwtcl" type="int">
           <ipxact:name>qhip_mmio_enable_hwtcl</ipxact:name>
           <ipxact:displayName>Enable MMIO</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="pld_clrpcs_hwtcl" type="int">
-          <ipxact:name>pld_clrpcs_hwtcl</ipxact:name>
-          <ipxact:displayName>Enable Independent Reset of PCS and Controller</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="standard_interface_selection_hwtcl" type="int">
@@ -6831,6 +6841,11 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="core16_user_mode_to_pld_in_use_hwtcl" type="int">
           <ipxact:name>core16_user_mode_to_pld_in_use_hwtcl</ipxact:name>
           <ipxact:displayName>Export user_mode_to_pld and pld_in_use interface</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core16_multi_lane_upconfigure_support_user_hwtcl" type="int">
+          <ipxact:name>core16_multi_lane_upconfigure_support_user_hwtcl</ipxact:name>
+          <ipxact:displayName>Dynamic Link Width Upconfig Support</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_enable_multi_func_hwtcl" type="int">
@@ -10278,6 +10293,46 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:displayName>PF7 Enable PRS</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
+        <ipxact:parameter parameterId="core16_pf0_prs_outstanding_capacity_hwtcl" type="longint">
+          <ipxact:name>core16_pf0_prs_outstanding_capacity_hwtcl</ipxact:name>
+          <ipxact:displayName>PF0 Page Request Services Outstanding Capacity</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core16_pf1_prs_outstanding_capacity_hwtcl" type="longint">
+          <ipxact:name>core16_pf1_prs_outstanding_capacity_hwtcl</ipxact:name>
+          <ipxact:displayName>PF1 Page Request Services Outstanding Capacity</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core16_pf2_prs_outstanding_capacity_hwtcl" type="longint">
+          <ipxact:name>core16_pf2_prs_outstanding_capacity_hwtcl</ipxact:name>
+          <ipxact:displayName>PF2 Page Request Services Outstanding Capacity</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core16_pf3_prs_outstanding_capacity_hwtcl" type="longint">
+          <ipxact:name>core16_pf3_prs_outstanding_capacity_hwtcl</ipxact:name>
+          <ipxact:displayName>PF3 Page Request Services Outstanding Capacity</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core16_pf4_prs_outstanding_capacity_hwtcl" type="longint">
+          <ipxact:name>core16_pf4_prs_outstanding_capacity_hwtcl</ipxact:name>
+          <ipxact:displayName>PF4 Page Request Services Outstanding Capacity</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core16_pf5_prs_outstanding_capacity_hwtcl" type="longint">
+          <ipxact:name>core16_pf5_prs_outstanding_capacity_hwtcl</ipxact:name>
+          <ipxact:displayName>PF5 Page Request Services Outstanding Capacity</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core16_pf6_prs_outstanding_capacity_hwtcl" type="longint">
+          <ipxact:name>core16_pf6_prs_outstanding_capacity_hwtcl</ipxact:name>
+          <ipxact:displayName>PF6 Page Request Services Outstanding Capacity</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core16_pf7_prs_outstanding_capacity_hwtcl" type="longint">
+          <ipxact:name>core16_pf7_prs_outstanding_capacity_hwtcl</ipxact:name>
+          <ipxact:displayName>PF7 Page Request Services Outstanding Capacity</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
         <ipxact:parameter parameterId="core16_virtual_pf0_pasid_cap_enable_hwtcl" type="int">
           <ipxact:name>core16_virtual_pf0_pasid_cap_enable_hwtcl</ipxact:name>
           <ipxact:displayName>PCIE0 PF0 Enable PASID</ipxact:displayName>
@@ -10460,73 +10515,53 @@ https://fpgasoftware.intel.com/eula.-->
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_user_pcie_cap_ep_l1_accpt_latency_hwtcl" type="int">
           <ipxact:name>core16_user_pcie_cap_ep_l1_accpt_latency_hwtcl</ipxact:name>
-          <ipxact:displayName>Endpoint L1s acceptable latency</ipxact:displayName>
+          <ipxact:displayName>Endpoint L1 acceptable latency</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
-        <ipxact:parameter parameterId="core16_l1sub_control1_reg_l1_1_pcipm_en_hwtcl" type="int">
-          <ipxact:name>core16_l1sub_control1_reg_l1_1_pcipm_en_hwtcl</ipxact:name>
-          <ipxact:displayName>Enable PCI-PM L1.1</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core16_l1sub_control1_reg_l1_2_pcipm_en_hwtcl" type="int">
-          <ipxact:name>core16_l1sub_control1_reg_l1_2_pcipm_en_hwtcl</ipxact:name>
-          <ipxact:displayName>Enable PCI-PM L1.2</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core16_l1sub_control1_reg_l1_1_aspm_en_hwtcl" type="int">
-          <ipxact:name>core16_l1sub_control1_reg_l1_1_aspm_en_hwtcl</ipxact:name>
+        <ipxact:parameter parameterId="core16_l1sub_control1_reg_l1_1_aspm_support_hwtcl" type="int">
+          <ipxact:name>core16_l1sub_control1_reg_l1_1_aspm_support_hwtcl</ipxact:name>
           <ipxact:displayName>Enable ASPM L1.1</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
-        <ipxact:parameter parameterId="core16_l1sub_control1_reg_l1_2_aspm_en_hwtcl" type="int">
-          <ipxact:name>core16_l1sub_control1_reg_l1_2_aspm_en_hwtcl</ipxact:name>
+        <ipxact:parameter parameterId="core16_l1sub_control1_reg_l1_2_aspm_support_hwtcl" type="int">
+          <ipxact:name>core16_l1sub_control1_reg_l1_2_aspm_support_hwtcl</ipxact:name>
           <ipxact:displayName>Enable ASPM L1.2</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core16_l1sub_control1_reg_l1_1_pcipm_support_hwtcl" type="int">
+          <ipxact:name>core16_l1sub_control1_reg_l1_1_pcipm_support_hwtcl</ipxact:name>
+          <ipxact:displayName>Enable PCI-PM L1.1</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core16_l1sub_control1_reg_l1_2_pcipm_support_hwtcl" type="int">
+          <ipxact:name>core16_l1sub_control1_reg_l1_2_pcipm_support_hwtcl</ipxact:name>
+          <ipxact:displayName>Enable PCI-PM L1.2</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_l1sub_off_t_pwer_off_hwtcl" type="int">
           <ipxact:name>core16_l1sub_off_t_pwer_off_hwtcl</ipxact:name>
-          <ipxact:displayName>Duration of L1.2</ipxact:displayName>
+          <ipxact:displayName>Time of Power Off</ipxact:displayName>
           <ipxact:value>2</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_l1sub_off_l1sub_t_l1_2_hwtcl" type="int">
           <ipxact:name>core16_l1sub_off_l1sub_t_l1_2_hwtcl</ipxact:name>
-          <ipxact:displayName>Duration of L1.2 Entry</ipxact:displayName>
+          <ipxact:displayName>Time of L1.2</ipxact:displayName>
           <ipxact:value>4</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core16_l1sub_off_t_pclkack_low_hwtcl" type="int">
-          <ipxact:name>core16_l1sub_off_t_pclkack_low_hwtcl</ipxact:name>
-          <ipxact:displayName>Max delay</ipxact:displayName>
-          <ipxact:value>3</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core16_l1sub_capability_reg_comm_mode_support_hwtcl" type="int">
-          <ipxact:name>core16_l1sub_capability_reg_comm_mode_support_hwtcl</ipxact:name>
-          <ipxact:displayName>Port Common Mode Restore Time (us)</ipxact:displayName>
-          <ipxact:value>10</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_l1sub_capability_reg_pwr_on_scale_support_hwtcl" type="int">
           <ipxact:name>core16_l1sub_capability_reg_pwr_on_scale_support_hwtcl</ipxact:name>
-          <ipxact:displayName>Port T Power on Scale</ipxact:displayName>
+          <ipxact:displayName>Time of Power on Scale</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_l1sub_capability_reg_pwr_on_value_support_hwtcl" type="int">
           <ipxact:name>core16_l1sub_capability_reg_pwr_on_value_support_hwtcl</ipxact:name>
-          <ipxact:displayName>Port T Power on Value</ipxact:displayName>
+          <ipxact:displayName>Time of Power on Value</ipxact:displayName>
           <ipxact:value>5</ipxact:value>
         </ipxact:parameter>
-        <ipxact:parameter parameterId="core16_l1sub_control1_reg_t_common_mode_hwtcl" type="int">
-          <ipxact:name>core16_l1sub_control1_reg_t_common_mode_hwtcl</ipxact:name>
-          <ipxact:displayName>Common Mode Restore Time (us)</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core16_l1sub_control1_reg_l1_2_th_sca_hwtcl" type="int">
-          <ipxact:name>core16_l1sub_control1_reg_l1_2_th_sca_hwtcl</ipxact:name>
-          <ipxact:displayName>LTR L1.2 Threshold Scale</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core16_l1sub_control1_reg_l1_2_th_val_hwtcl" type="int">
-          <ipxact:name>core16_l1sub_control1_reg_l1_2_th_val_hwtcl</ipxact:name>
-          <ipxact:displayName>LTR L1.2 Threshold Value</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
+        <ipxact:parameter parameterId="core16_l1sub_capability_reg_comm_mode_support_hwtcl" type="int">
+          <ipxact:name>core16_l1sub_capability_reg_comm_mode_support_hwtcl</ipxact:name>
+          <ipxact:displayName>Time of Common Mode (us)</ipxact:displayName>
+          <ipxact:value>10</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_virtual_pf0_ltr_cap_enable_hwtcl" type="int">
           <ipxact:name>core16_virtual_pf0_ltr_cap_enable_hwtcl</ipxact:name>
@@ -11633,20 +11668,35 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:displayName>Drops Vendor Type1 Messages</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
+        <ipxact:parameter parameterId="core16_pf0_gen3_eq_pset_req_vec_a0_user_hwtcl" type="int">
+          <ipxact:name>core16_pf0_gen3_eq_pset_req_vec_a0_user_hwtcl</ipxact:name>
+          <ipxact:displayName>Gen 3 Requested equalization far-end TX preset vector</ipxact:displayName>
+          <ipxact:value>512</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core16_pf0_gen4_eq_pset_req_vec_a0_user_hwtcl" type="int">
+          <ipxact:name>core16_pf0_gen4_eq_pset_req_vec_a0_user_hwtcl</ipxact:name>
+          <ipxact:displayName>Gen 4 Requested equalization far-end TX preset vector</ipxact:displayName>
+          <ipxact:value>8</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core16_pf0_gen5_eq_pset_req_vec_a0_user_hwtcl" type="int">
+          <ipxact:name>core16_pf0_gen5_eq_pset_req_vec_a0_user_hwtcl</ipxact:name>
+          <ipxact:displayName>Gen 5 Requested equalization far-end TX preset vector</ipxact:displayName>
+          <ipxact:value>512</ipxact:value>
+        </ipxact:parameter>
         <ipxact:parameter parameterId="core16_pf0_gen3_eq_pset_req_vec_user_hwtcl" type="int">
           <ipxact:name>core16_pf0_gen3_eq_pset_req_vec_user_hwtcl</ipxact:name>
           <ipxact:displayName>Gen 3 Requested equalization far-end TX preset vector</ipxact:displayName>
-          <ipxact:value>512</ipxact:value>
+          <ipxact:value>16</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_pf0_gen4_eq_pset_req_vec_user_hwtcl" type="int">
           <ipxact:name>core16_pf0_gen4_eq_pset_req_vec_user_hwtcl</ipxact:name>
           <ipxact:displayName>Gen 4 Requested equalization far-end TX preset vector</ipxact:displayName>
-          <ipxact:value>8</ipxact:value>
+          <ipxact:value>136</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_pf0_gen5_eq_pset_req_vec_user_hwtcl" type="int">
           <ipxact:name>core16_pf0_gen5_eq_pset_req_vec_user_hwtcl</ipxact:name>
           <ipxact:displayName>Gen 5 Requested equalization far-end TX preset vector</ipxact:displayName>
-          <ipxact:value>512</ipxact:value>
+          <ipxact:value>768</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_pf0_eq_phase_2_3_user_hwtcl" type="int">
           <ipxact:name>core16_pf0_eq_phase_2_3_user_hwtcl</ipxact:name>
@@ -11670,7 +11720,7 @@ https://fpgasoftware.intel.com/eula.-->
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_hip_reconfig_user_hwtcl" type="int">
           <ipxact:name>core16_hip_reconfig_user_hwtcl</ipxact:name>
-          <ipxact:displayName>Enable HIP dynamic reconfiguration of PCIe registers</ipxact:displayName>
+          <ipxact:displayName>Enable Hard IP Reconfiguration Interface</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core16_enable_legacy_interrupt_hwtcl" type="int">
@@ -11806,6 +11856,11 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="core8_user_mode_to_pld_in_use_hwtcl" type="int">
           <ipxact:name>core8_user_mode_to_pld_in_use_hwtcl</ipxact:name>
           <ipxact:displayName>Export user_mode_to_pld and pld_in_use interface</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core8_multi_lane_upconfigure_support_user_hwtcl" type="int">
+          <ipxact:name>core8_multi_lane_upconfigure_support_user_hwtcl</ipxact:name>
+          <ipxact:displayName>Dynamic Link Width Upconfig Support</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core8_enable_multi_func_hwtcl" type="int">
@@ -15258,6 +15313,46 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:displayName>PF7 Enable PRS</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
+        <ipxact:parameter parameterId="core8_pf0_prs_outstanding_capacity_hwtcl" type="longint">
+          <ipxact:name>core8_pf0_prs_outstanding_capacity_hwtcl</ipxact:name>
+          <ipxact:displayName>PF0 Page Request Services Outstanding Capacity</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core8_pf1_prs_outstanding_capacity_hwtcl" type="longint">
+          <ipxact:name>core8_pf1_prs_outstanding_capacity_hwtcl</ipxact:name>
+          <ipxact:displayName>PF1 Page Request Services Outstanding Capacity</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core8_pf2_prs_outstanding_capacity_hwtcl" type="longint">
+          <ipxact:name>core8_pf2_prs_outstanding_capacity_hwtcl</ipxact:name>
+          <ipxact:displayName>PF2 Page Request Services Outstanding Capacity</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core8_pf3_prs_outstanding_capacity_hwtcl" type="longint">
+          <ipxact:name>core8_pf3_prs_outstanding_capacity_hwtcl</ipxact:name>
+          <ipxact:displayName>PF3 Page Request Services Outstanding Capacity</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core8_pf4_prs_outstanding_capacity_hwtcl" type="longint">
+          <ipxact:name>core8_pf4_prs_outstanding_capacity_hwtcl</ipxact:name>
+          <ipxact:displayName>PF4 Page Request Services Outstanding Capacity</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core8_pf5_prs_outstanding_capacity_hwtcl" type="longint">
+          <ipxact:name>core8_pf5_prs_outstanding_capacity_hwtcl</ipxact:name>
+          <ipxact:displayName>PF5 Page Request Services Outstanding Capacity</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core8_pf6_prs_outstanding_capacity_hwtcl" type="longint">
+          <ipxact:name>core8_pf6_prs_outstanding_capacity_hwtcl</ipxact:name>
+          <ipxact:displayName>PF6 Page Request Services Outstanding Capacity</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core8_pf7_prs_outstanding_capacity_hwtcl" type="longint">
+          <ipxact:name>core8_pf7_prs_outstanding_capacity_hwtcl</ipxact:name>
+          <ipxact:displayName>PF7 Page Request Services Outstanding Capacity</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
         <ipxact:parameter parameterId="core8_virtual_pf0_pasid_cap_enable_hwtcl" type="int">
           <ipxact:name>core8_virtual_pf0_pasid_cap_enable_hwtcl</ipxact:name>
           <ipxact:displayName>PCIe1 PF0 Enable PASID</ipxact:displayName>
@@ -15440,73 +15535,53 @@ https://fpgasoftware.intel.com/eula.-->
         </ipxact:parameter>
         <ipxact:parameter parameterId="core8_user_pcie_cap_ep_l1_accpt_latency_hwtcl" type="int">
           <ipxact:name>core8_user_pcie_cap_ep_l1_accpt_latency_hwtcl</ipxact:name>
-          <ipxact:displayName>Endpoint L1s acceptable latency</ipxact:displayName>
+          <ipxact:displayName>Endpoint L1 acceptable latency</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
-        <ipxact:parameter parameterId="core8_l1sub_control1_reg_l1_1_pcipm_en_hwtcl" type="int">
-          <ipxact:name>core8_l1sub_control1_reg_l1_1_pcipm_en_hwtcl</ipxact:name>
-          <ipxact:displayName>Enable PCI-PM L1.1</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core8_l1sub_control1_reg_l1_2_pcipm_en_hwtcl" type="int">
-          <ipxact:name>core8_l1sub_control1_reg_l1_2_pcipm_en_hwtcl</ipxact:name>
-          <ipxact:displayName>Enable PCI-PM L1.2</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core8_l1sub_control1_reg_l1_1_aspm_en_hwtcl" type="int">
-          <ipxact:name>core8_l1sub_control1_reg_l1_1_aspm_en_hwtcl</ipxact:name>
+        <ipxact:parameter parameterId="core8_l1sub_control1_reg_l1_1_aspm_support_hwtcl" type="int">
+          <ipxact:name>core8_l1sub_control1_reg_l1_1_aspm_support_hwtcl</ipxact:name>
           <ipxact:displayName>Enable ASPM L1.1</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
-        <ipxact:parameter parameterId="core8_l1sub_control1_reg_l1_2_aspm_en_hwtcl" type="int">
-          <ipxact:name>core8_l1sub_control1_reg_l1_2_aspm_en_hwtcl</ipxact:name>
+        <ipxact:parameter parameterId="core8_l1sub_control1_reg_l1_2_aspm_support_hwtcl" type="int">
+          <ipxact:name>core8_l1sub_control1_reg_l1_2_aspm_support_hwtcl</ipxact:name>
           <ipxact:displayName>Enable ASPM L1.2</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core8_l1sub_control1_reg_l1_1_pcipm_support_hwtcl" type="int">
+          <ipxact:name>core8_l1sub_control1_reg_l1_1_pcipm_support_hwtcl</ipxact:name>
+          <ipxact:displayName>Enable PCI-PM L1.1</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core8_l1sub_control1_reg_l1_2_pcipm_support_hwtcl" type="int">
+          <ipxact:name>core8_l1sub_control1_reg_l1_2_pcipm_support_hwtcl</ipxact:name>
+          <ipxact:displayName>Enable PCI-PM L1.2</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core8_l1sub_off_t_pwer_off_hwtcl" type="int">
           <ipxact:name>core8_l1sub_off_t_pwer_off_hwtcl</ipxact:name>
-          <ipxact:displayName>Duration of L1.2</ipxact:displayName>
+          <ipxact:displayName>Time of Power Off</ipxact:displayName>
           <ipxact:value>2</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core8_l1sub_off_l1sub_t_l1_2_hwtcl" type="int">
           <ipxact:name>core8_l1sub_off_l1sub_t_l1_2_hwtcl</ipxact:name>
-          <ipxact:displayName>Duration of L1.2 Entry</ipxact:displayName>
+          <ipxact:displayName>Time of L1.2</ipxact:displayName>
           <ipxact:value>4</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core8_l1sub_off_t_pclkack_low_hwtcl" type="int">
-          <ipxact:name>core8_l1sub_off_t_pclkack_low_hwtcl</ipxact:name>
-          <ipxact:displayName>Max delay</ipxact:displayName>
-          <ipxact:value>3</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core8_l1sub_capability_reg_comm_mode_support_hwtcl" type="int">
-          <ipxact:name>core8_l1sub_capability_reg_comm_mode_support_hwtcl</ipxact:name>
-          <ipxact:displayName>Port Common Mode Restore Time (us)</ipxact:displayName>
-          <ipxact:value>10</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core8_l1sub_capability_reg_pwr_on_scale_support_hwtcl" type="int">
           <ipxact:name>core8_l1sub_capability_reg_pwr_on_scale_support_hwtcl</ipxact:name>
-          <ipxact:displayName>Port T Power on Scale</ipxact:displayName>
+          <ipxact:displayName>Time of Power on Scale</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core8_l1sub_capability_reg_pwr_on_value_support_hwtcl" type="int">
           <ipxact:name>core8_l1sub_capability_reg_pwr_on_value_support_hwtcl</ipxact:name>
-          <ipxact:displayName>Port T Power on Value</ipxact:displayName>
+          <ipxact:displayName>Time of Power on Value</ipxact:displayName>
           <ipxact:value>5</ipxact:value>
         </ipxact:parameter>
-        <ipxact:parameter parameterId="core8_l1sub_control1_reg_t_common_mode_hwtcl" type="int">
-          <ipxact:name>core8_l1sub_control1_reg_t_common_mode_hwtcl</ipxact:name>
-          <ipxact:displayName>Common Mode Restore Time (us)</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core8_l1sub_control1_reg_l1_2_th_sca_hwtcl" type="int">
-          <ipxact:name>core8_l1sub_control1_reg_l1_2_th_sca_hwtcl</ipxact:name>
-          <ipxact:displayName>LTR L1.2 Threshold Scale</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core8_l1sub_control1_reg_l1_2_th_val_hwtcl" type="int">
-          <ipxact:name>core8_l1sub_control1_reg_l1_2_th_val_hwtcl</ipxact:name>
-          <ipxact:displayName>LTR L1.2 Threshold Value</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
+        <ipxact:parameter parameterId="core8_l1sub_capability_reg_comm_mode_support_hwtcl" type="int">
+          <ipxact:name>core8_l1sub_capability_reg_comm_mode_support_hwtcl</ipxact:name>
+          <ipxact:displayName>Time of Common Mode (us)</ipxact:displayName>
+          <ipxact:value>10</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core8_virtual_pf0_ltr_cap_enable_hwtcl" type="int">
           <ipxact:name>core8_virtual_pf0_ltr_cap_enable_hwtcl</ipxact:name>
@@ -16613,20 +16688,35 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:displayName>Drops Vendor Type1 Messages</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
+        <ipxact:parameter parameterId="core8_pf0_gen3_eq_pset_req_vec_a0_user_hwtcl" type="int">
+          <ipxact:name>core8_pf0_gen3_eq_pset_req_vec_a0_user_hwtcl</ipxact:name>
+          <ipxact:displayName>Gen 3 Requested equalization far-end TX preset vector</ipxact:displayName>
+          <ipxact:value>512</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core8_pf0_gen4_eq_pset_req_vec_a0_user_hwtcl" type="int">
+          <ipxact:name>core8_pf0_gen4_eq_pset_req_vec_a0_user_hwtcl</ipxact:name>
+          <ipxact:displayName>Gen 4 Requested equalization far-end TX preset vector</ipxact:displayName>
+          <ipxact:value>8</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core8_pf0_gen5_eq_pset_req_vec_a0_user_hwtcl" type="int">
+          <ipxact:name>core8_pf0_gen5_eq_pset_req_vec_a0_user_hwtcl</ipxact:name>
+          <ipxact:displayName>Gen 5 Requested equalization far-end TX preset vector</ipxact:displayName>
+          <ipxact:value>512</ipxact:value>
+        </ipxact:parameter>
         <ipxact:parameter parameterId="core8_pf0_gen3_eq_pset_req_vec_user_hwtcl" type="int">
           <ipxact:name>core8_pf0_gen3_eq_pset_req_vec_user_hwtcl</ipxact:name>
           <ipxact:displayName>Gen 3 Requested equalization far-end TX preset vector</ipxact:displayName>
-          <ipxact:value>512</ipxact:value>
+          <ipxact:value>16</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core8_pf0_gen4_eq_pset_req_vec_user_hwtcl" type="int">
           <ipxact:name>core8_pf0_gen4_eq_pset_req_vec_user_hwtcl</ipxact:name>
           <ipxact:displayName>Gen 4 Requested equalization far-end TX preset vector</ipxact:displayName>
-          <ipxact:value>8</ipxact:value>
+          <ipxact:value>136</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core8_pf0_gen5_eq_pset_req_vec_user_hwtcl" type="int">
           <ipxact:name>core8_pf0_gen5_eq_pset_req_vec_user_hwtcl</ipxact:name>
           <ipxact:displayName>Gen 5 Requested equalization far-end TX preset vector</ipxact:displayName>
-          <ipxact:value>512</ipxact:value>
+          <ipxact:value>768</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core8_pf0_eq_phase_2_3_user_hwtcl" type="int">
           <ipxact:name>core8_pf0_eq_phase_2_3_user_hwtcl</ipxact:name>
@@ -16645,7 +16735,7 @@ https://fpgasoftware.intel.com/eula.-->
         </ipxact:parameter>
         <ipxact:parameter parameterId="core8_hip_reconfig_user_hwtcl" type="int">
           <ipxact:name>core8_hip_reconfig_user_hwtcl</ipxact:name>
-          <ipxact:displayName>Enable HIP dynamic reconfiguration of PCIe registers</ipxact:displayName>
+          <ipxact:displayName>Enable Hard IP Reconfiguration Interface</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core8_enable_legacy_interrupt_hwtcl" type="int">
@@ -16781,6 +16871,11 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="core4_0_user_mode_to_pld_in_use_hwtcl" type="int">
           <ipxact:name>core4_0_user_mode_to_pld_in_use_hwtcl</ipxact:name>
           <ipxact:displayName>Export user_mode_to_pld and pld_in_use interface</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core4_0_multi_lane_upconfigure_support_user_hwtcl" type="int">
+          <ipxact:name>core4_0_multi_lane_upconfigure_support_user_hwtcl</ipxact:name>
+          <ipxact:displayName>Dynamic Link Width Upconfig Support</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_0_enable_virtio_hwtcl" type="int">
@@ -17158,6 +17253,11 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:displayName>PF0 Enable PRS</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
+        <ipxact:parameter parameterId="core4_0_pf0_prs_outstanding_capacity_hwtcl" type="longint">
+          <ipxact:name>core4_0_pf0_prs_outstanding_capacity_hwtcl</ipxact:name>
+          <ipxact:displayName>PF0 Page Request Services Outstanding Capacity</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
         <ipxact:parameter parameterId="core4_0_virtual_pf0_pasid_cap_enable_hwtcl" type="int">
           <ipxact:name>core4_0_virtual_pf0_pasid_cap_enable_hwtcl</ipxact:name>
           <ipxact:displayName>PCIe2 PF0 Enable PASID</ipxact:displayName>
@@ -17200,73 +17300,53 @@ https://fpgasoftware.intel.com/eula.-->
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_0_user_pcie_cap_ep_l1_accpt_latency_hwtcl" type="int">
           <ipxact:name>core4_0_user_pcie_cap_ep_l1_accpt_latency_hwtcl</ipxact:name>
-          <ipxact:displayName>Endpoint L1s acceptable latency</ipxact:displayName>
+          <ipxact:displayName>Endpoint L1 acceptable latency</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
-        <ipxact:parameter parameterId="core4_0_l1sub_control1_reg_l1_1_pcipm_en_hwtcl" type="int">
-          <ipxact:name>core4_0_l1sub_control1_reg_l1_1_pcipm_en_hwtcl</ipxact:name>
-          <ipxact:displayName>Enable PCI-PM L1.1</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core4_0_l1sub_control1_reg_l1_2_pcipm_en_hwtcl" type="int">
-          <ipxact:name>core4_0_l1sub_control1_reg_l1_2_pcipm_en_hwtcl</ipxact:name>
-          <ipxact:displayName>Enable PCI-PM L1.2</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core4_0_l1sub_control1_reg_l1_1_aspm_en_hwtcl" type="int">
-          <ipxact:name>core4_0_l1sub_control1_reg_l1_1_aspm_en_hwtcl</ipxact:name>
+        <ipxact:parameter parameterId="core4_0_l1sub_control1_reg_l1_1_aspm_support_hwtcl" type="int">
+          <ipxact:name>core4_0_l1sub_control1_reg_l1_1_aspm_support_hwtcl</ipxact:name>
           <ipxact:displayName>Enable ASPM L1.1</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
-        <ipxact:parameter parameterId="core4_0_l1sub_control1_reg_l1_2_aspm_en_hwtcl" type="int">
-          <ipxact:name>core4_0_l1sub_control1_reg_l1_2_aspm_en_hwtcl</ipxact:name>
+        <ipxact:parameter parameterId="core4_0_l1sub_control1_reg_l1_2_aspm_support_hwtcl" type="int">
+          <ipxact:name>core4_0_l1sub_control1_reg_l1_2_aspm_support_hwtcl</ipxact:name>
           <ipxact:displayName>Enable ASPM L1.2</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core4_0_l1sub_control1_reg_l1_1_pcipm_support_hwtcl" type="int">
+          <ipxact:name>core4_0_l1sub_control1_reg_l1_1_pcipm_support_hwtcl</ipxact:name>
+          <ipxact:displayName>Enable PCI-PM L1.1</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core4_0_l1sub_control1_reg_l1_2_pcipm_support_hwtcl" type="int">
+          <ipxact:name>core4_0_l1sub_control1_reg_l1_2_pcipm_support_hwtcl</ipxact:name>
+          <ipxact:displayName>Enable PCI-PM L1.2</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_0_l1sub_off_t_pwer_off_hwtcl" type="int">
           <ipxact:name>core4_0_l1sub_off_t_pwer_off_hwtcl</ipxact:name>
-          <ipxact:displayName>Duration of L1.2</ipxact:displayName>
+          <ipxact:displayName>Time of Power Off</ipxact:displayName>
           <ipxact:value>2</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_0_l1sub_off_l1sub_t_l1_2_hwtcl" type="int">
           <ipxact:name>core4_0_l1sub_off_l1sub_t_l1_2_hwtcl</ipxact:name>
-          <ipxact:displayName>Duration of L1.2 Entry</ipxact:displayName>
+          <ipxact:displayName>Time of L1.2</ipxact:displayName>
           <ipxact:value>4</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core4_0_l1sub_off_t_pclkack_low_hwtcl" type="int">
-          <ipxact:name>core4_0_l1sub_off_t_pclkack_low_hwtcl</ipxact:name>
-          <ipxact:displayName>Max delay</ipxact:displayName>
-          <ipxact:value>3</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core4_0_l1sub_capability_reg_comm_mode_support_hwtcl" type="int">
-          <ipxact:name>core4_0_l1sub_capability_reg_comm_mode_support_hwtcl</ipxact:name>
-          <ipxact:displayName>Port Common Mode Restore Time (us)</ipxact:displayName>
-          <ipxact:value>10</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_0_l1sub_capability_reg_pwr_on_scale_support_hwtcl" type="int">
           <ipxact:name>core4_0_l1sub_capability_reg_pwr_on_scale_support_hwtcl</ipxact:name>
-          <ipxact:displayName>Port T Power on Scale</ipxact:displayName>
+          <ipxact:displayName>Time of Power on Scale</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_0_l1sub_capability_reg_pwr_on_value_support_hwtcl" type="int">
           <ipxact:name>core4_0_l1sub_capability_reg_pwr_on_value_support_hwtcl</ipxact:name>
-          <ipxact:displayName>Port T Power on Value</ipxact:displayName>
+          <ipxact:displayName>Time of Power on Value</ipxact:displayName>
           <ipxact:value>5</ipxact:value>
         </ipxact:parameter>
-        <ipxact:parameter parameterId="core4_0_l1sub_control1_reg_t_common_mode_hwtcl" type="int">
-          <ipxact:name>core4_0_l1sub_control1_reg_t_common_mode_hwtcl</ipxact:name>
-          <ipxact:displayName>Common Mode Restore Time (us)</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core4_0_l1sub_control1_reg_l1_2_th_sca_hwtcl" type="int">
-          <ipxact:name>core4_0_l1sub_control1_reg_l1_2_th_sca_hwtcl</ipxact:name>
-          <ipxact:displayName>LTR L1.2 Threshold Scale</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core4_0_l1sub_control1_reg_l1_2_th_val_hwtcl" type="int">
-          <ipxact:name>core4_0_l1sub_control1_reg_l1_2_th_val_hwtcl</ipxact:name>
-          <ipxact:displayName>LTR L1.2 Threshold Value</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
+        <ipxact:parameter parameterId="core4_0_l1sub_capability_reg_comm_mode_support_hwtcl" type="int">
+          <ipxact:name>core4_0_l1sub_capability_reg_comm_mode_support_hwtcl</ipxact:name>
+          <ipxact:displayName>Time of Common Mode (us)</ipxact:displayName>
+          <ipxact:value>10</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_0_virtual_pf0_ltr_cap_enable_hwtcl" type="int">
           <ipxact:name>core4_0_virtual_pf0_ltr_cap_enable_hwtcl</ipxact:name>
@@ -17433,20 +17513,35 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:displayName>Drops Vendor Type1 Messages</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
+        <ipxact:parameter parameterId="core4_0_pf0_gen3_eq_pset_req_vec_a0_user_hwtcl" type="int">
+          <ipxact:name>core4_0_pf0_gen3_eq_pset_req_vec_a0_user_hwtcl</ipxact:name>
+          <ipxact:displayName>Gen 3 Requested equalization far-end TX preset vector</ipxact:displayName>
+          <ipxact:value>512</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core4_0_pf0_gen4_eq_pset_req_vec_a0_user_hwtcl" type="int">
+          <ipxact:name>core4_0_pf0_gen4_eq_pset_req_vec_a0_user_hwtcl</ipxact:name>
+          <ipxact:displayName>Gen 4 Requested equalization far-end TX preset vector</ipxact:displayName>
+          <ipxact:value>8</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core4_0_pf0_gen5_eq_pset_req_vec_a0_user_hwtcl" type="int">
+          <ipxact:name>core4_0_pf0_gen5_eq_pset_req_vec_a0_user_hwtcl</ipxact:name>
+          <ipxact:displayName>Gen 5 Requested equalization far-end TX preset vector</ipxact:displayName>
+          <ipxact:value>512</ipxact:value>
+        </ipxact:parameter>
         <ipxact:parameter parameterId="core4_0_pf0_gen3_eq_pset_req_vec_user_hwtcl" type="int">
           <ipxact:name>core4_0_pf0_gen3_eq_pset_req_vec_user_hwtcl</ipxact:name>
           <ipxact:displayName>Gen 3 Requested equalization far-end TX preset vector</ipxact:displayName>
-          <ipxact:value>512</ipxact:value>
+          <ipxact:value>16</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_0_pf0_gen4_eq_pset_req_vec_user_hwtcl" type="int">
           <ipxact:name>core4_0_pf0_gen4_eq_pset_req_vec_user_hwtcl</ipxact:name>
           <ipxact:displayName>Gen 4 Requested equalization far-end TX preset vector</ipxact:displayName>
-          <ipxact:value>8</ipxact:value>
+          <ipxact:value>136</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_0_pf0_gen5_eq_pset_req_vec_user_hwtcl" type="int">
           <ipxact:name>core4_0_pf0_gen5_eq_pset_req_vec_user_hwtcl</ipxact:name>
           <ipxact:displayName>Gen 5 Requested equalization far-end TX preset vector</ipxact:displayName>
-          <ipxact:value>512</ipxact:value>
+          <ipxact:value>768</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_0_pf0_eq_phase_2_3_user_hwtcl" type="int">
           <ipxact:name>core4_0_pf0_eq_phase_2_3_user_hwtcl</ipxact:name>
@@ -17460,7 +17555,7 @@ https://fpgasoftware.intel.com/eula.-->
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_0_hip_reconfig_user_hwtcl" type="int">
           <ipxact:name>core4_0_hip_reconfig_user_hwtcl</ipxact:name>
-          <ipxact:displayName>Enable HIP dynamic reconfiguration of PCIe registers</ipxact:displayName>
+          <ipxact:displayName>Enable Hard IP Reconfiguration Interface</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_0_enable_legacy_interrupt_hwtcl" type="int">
@@ -17561,6 +17656,11 @@ https://fpgasoftware.intel.com/eula.-->
         <ipxact:parameter parameterId="core4_1_user_mode_to_pld_in_use_hwtcl" type="int">
           <ipxact:name>core4_1_user_mode_to_pld_in_use_hwtcl</ipxact:name>
           <ipxact:displayName>Export user_mode_to_pld and pld_in_use interface</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core4_1_multi_lane_upconfigure_support_user_hwtcl" type="int">
+          <ipxact:name>core4_1_multi_lane_upconfigure_support_user_hwtcl</ipxact:name>
+          <ipxact:displayName>Dynamic Link Width Upconfig Support</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_1_enable_virtio_hwtcl" type="int">
@@ -17938,6 +18038,11 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:displayName>PF0 Enable PRS</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
+        <ipxact:parameter parameterId="core4_1_pf0_prs_outstanding_capacity_hwtcl" type="longint">
+          <ipxact:name>core4_1_pf0_prs_outstanding_capacity_hwtcl</ipxact:name>
+          <ipxact:displayName>PF0 Page Request Services Outstanding Capacity</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
         <ipxact:parameter parameterId="core4_1_virtual_pf0_pasid_cap_enable_hwtcl" type="int">
           <ipxact:name>core4_1_virtual_pf0_pasid_cap_enable_hwtcl</ipxact:name>
           <ipxact:displayName>PCIe3 PF0 Enable PASID</ipxact:displayName>
@@ -17980,73 +18085,53 @@ https://fpgasoftware.intel.com/eula.-->
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_1_user_pcie_cap_ep_l1_accpt_latency_hwtcl" type="int">
           <ipxact:name>core4_1_user_pcie_cap_ep_l1_accpt_latency_hwtcl</ipxact:name>
-          <ipxact:displayName>Endpoint L1s acceptable latency</ipxact:displayName>
+          <ipxact:displayName>Endpoint L1 acceptable latency</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
-        <ipxact:parameter parameterId="core4_1_l1sub_control1_reg_l1_1_pcipm_en_hwtcl" type="int">
-          <ipxact:name>core4_1_l1sub_control1_reg_l1_1_pcipm_en_hwtcl</ipxact:name>
-          <ipxact:displayName>Enable PCI-PM L1.1</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core4_1_l1sub_control1_reg_l1_2_pcipm_en_hwtcl" type="int">
-          <ipxact:name>core4_1_l1sub_control1_reg_l1_2_pcipm_en_hwtcl</ipxact:name>
-          <ipxact:displayName>Enable PCI-PM L1.2</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core4_1_l1sub_control1_reg_l1_1_aspm_en_hwtcl" type="int">
-          <ipxact:name>core4_1_l1sub_control1_reg_l1_1_aspm_en_hwtcl</ipxact:name>
+        <ipxact:parameter parameterId="core4_1_l1sub_control1_reg_l1_1_aspm_support_hwtcl" type="int">
+          <ipxact:name>core4_1_l1sub_control1_reg_l1_1_aspm_support_hwtcl</ipxact:name>
           <ipxact:displayName>Enable ASPM L1.1</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
-        <ipxact:parameter parameterId="core4_1_l1sub_control1_reg_l1_2_aspm_en_hwtcl" type="int">
-          <ipxact:name>core4_1_l1sub_control1_reg_l1_2_aspm_en_hwtcl</ipxact:name>
+        <ipxact:parameter parameterId="core4_1_l1sub_control1_reg_l1_2_aspm_support_hwtcl" type="int">
+          <ipxact:name>core4_1_l1sub_control1_reg_l1_2_aspm_support_hwtcl</ipxact:name>
           <ipxact:displayName>Enable ASPM L1.2</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core4_1_l1sub_control1_reg_l1_1_pcipm_support_hwtcl" type="int">
+          <ipxact:name>core4_1_l1sub_control1_reg_l1_1_pcipm_support_hwtcl</ipxact:name>
+          <ipxact:displayName>Enable PCI-PM L1.1</ipxact:displayName>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core4_1_l1sub_control1_reg_l1_2_pcipm_support_hwtcl" type="int">
+          <ipxact:name>core4_1_l1sub_control1_reg_l1_2_pcipm_support_hwtcl</ipxact:name>
+          <ipxact:displayName>Enable PCI-PM L1.2</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_1_l1sub_off_t_pwer_off_hwtcl" type="int">
           <ipxact:name>core4_1_l1sub_off_t_pwer_off_hwtcl</ipxact:name>
-          <ipxact:displayName>Duration of L1.2</ipxact:displayName>
+          <ipxact:displayName>Time of Power Off</ipxact:displayName>
           <ipxact:value>2</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_1_l1sub_off_l1sub_t_l1_2_hwtcl" type="int">
           <ipxact:name>core4_1_l1sub_off_l1sub_t_l1_2_hwtcl</ipxact:name>
-          <ipxact:displayName>Duration of L1.2 Entry</ipxact:displayName>
+          <ipxact:displayName>Time of L1.2</ipxact:displayName>
           <ipxact:value>4</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core4_1_l1sub_off_t_pclkack_low_hwtcl" type="int">
-          <ipxact:name>core4_1_l1sub_off_t_pclkack_low_hwtcl</ipxact:name>
-          <ipxact:displayName>Max delay</ipxact:displayName>
-          <ipxact:value>3</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core4_1_l1sub_capability_reg_comm_mode_support_hwtcl" type="int">
-          <ipxact:name>core4_1_l1sub_capability_reg_comm_mode_support_hwtcl</ipxact:name>
-          <ipxact:displayName>Port Common Mode Restore Time (us)</ipxact:displayName>
-          <ipxact:value>10</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_1_l1sub_capability_reg_pwr_on_scale_support_hwtcl" type="int">
           <ipxact:name>core4_1_l1sub_capability_reg_pwr_on_scale_support_hwtcl</ipxact:name>
-          <ipxact:displayName>Port T Power on Scale</ipxact:displayName>
+          <ipxact:displayName>Time of Power on Scale</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_1_l1sub_capability_reg_pwr_on_value_support_hwtcl" type="int">
           <ipxact:name>core4_1_l1sub_capability_reg_pwr_on_value_support_hwtcl</ipxact:name>
-          <ipxact:displayName>Port T Power on Value</ipxact:displayName>
+          <ipxact:displayName>Time of Power on Value</ipxact:displayName>
           <ipxact:value>5</ipxact:value>
         </ipxact:parameter>
-        <ipxact:parameter parameterId="core4_1_l1sub_control1_reg_t_common_mode_hwtcl" type="int">
-          <ipxact:name>core4_1_l1sub_control1_reg_t_common_mode_hwtcl</ipxact:name>
-          <ipxact:displayName>Common Mode Restore Time (us)</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core4_1_l1sub_control1_reg_l1_2_th_sca_hwtcl" type="int">
-          <ipxact:name>core4_1_l1sub_control1_reg_l1_2_th_sca_hwtcl</ipxact:name>
-          <ipxact:displayName>LTR L1.2 Threshold Scale</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
-        </ipxact:parameter>
-        <ipxact:parameter parameterId="core4_1_l1sub_control1_reg_l1_2_th_val_hwtcl" type="int">
-          <ipxact:name>core4_1_l1sub_control1_reg_l1_2_th_val_hwtcl</ipxact:name>
-          <ipxact:displayName>LTR L1.2 Threshold Value</ipxact:displayName>
-          <ipxact:value>0</ipxact:value>
+        <ipxact:parameter parameterId="core4_1_l1sub_capability_reg_comm_mode_support_hwtcl" type="int">
+          <ipxact:name>core4_1_l1sub_capability_reg_comm_mode_support_hwtcl</ipxact:name>
+          <ipxact:displayName>Time of Common Mode (us)</ipxact:displayName>
+          <ipxact:value>10</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_1_virtual_pf0_ltr_cap_enable_hwtcl" type="int">
           <ipxact:name>core4_1_virtual_pf0_ltr_cap_enable_hwtcl</ipxact:name>
@@ -18213,20 +18298,35 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:displayName>Drops Vendor Type1 Messages</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
+        <ipxact:parameter parameterId="core4_1_pf0_gen3_eq_pset_req_vec_a0_user_hwtcl" type="int">
+          <ipxact:name>core4_1_pf0_gen3_eq_pset_req_vec_a0_user_hwtcl</ipxact:name>
+          <ipxact:displayName>Gen 3 Requested equalization far-end TX preset vector</ipxact:displayName>
+          <ipxact:value>512</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core4_1_pf0_gen4_eq_pset_req_vec_a0_user_hwtcl" type="int">
+          <ipxact:name>core4_1_pf0_gen4_eq_pset_req_vec_a0_user_hwtcl</ipxact:name>
+          <ipxact:displayName>Gen 4 Requested equalization far-end TX preset vector</ipxact:displayName>
+          <ipxact:value>8</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="core4_1_pf0_gen5_eq_pset_req_vec_a0_user_hwtcl" type="int">
+          <ipxact:name>core4_1_pf0_gen5_eq_pset_req_vec_a0_user_hwtcl</ipxact:name>
+          <ipxact:displayName>Gen 5 Requested equalization far-end TX preset vector</ipxact:displayName>
+          <ipxact:value>512</ipxact:value>
+        </ipxact:parameter>
         <ipxact:parameter parameterId="core4_1_pf0_gen3_eq_pset_req_vec_user_hwtcl" type="int">
           <ipxact:name>core4_1_pf0_gen3_eq_pset_req_vec_user_hwtcl</ipxact:name>
           <ipxact:displayName>Gen 3 Requested equalization far-end TX preset vector</ipxact:displayName>
-          <ipxact:value>512</ipxact:value>
+          <ipxact:value>16</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_1_pf0_gen4_eq_pset_req_vec_user_hwtcl" type="int">
           <ipxact:name>core4_1_pf0_gen4_eq_pset_req_vec_user_hwtcl</ipxact:name>
           <ipxact:displayName>Gen 4 Requested equalization far-end TX preset vector</ipxact:displayName>
-          <ipxact:value>8</ipxact:value>
+          <ipxact:value>136</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_1_pf0_gen5_eq_pset_req_vec_user_hwtcl" type="int">
           <ipxact:name>core4_1_pf0_gen5_eq_pset_req_vec_user_hwtcl</ipxact:name>
           <ipxact:displayName>Gen 5 Requested equalization far-end TX preset vector</ipxact:displayName>
-          <ipxact:value>512</ipxact:value>
+          <ipxact:value>768</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_1_pf0_eq_phase_2_3_user_hwtcl" type="int">
           <ipxact:name>core4_1_pf0_eq_phase_2_3_user_hwtcl</ipxact:name>
@@ -18240,7 +18340,7 @@ https://fpgasoftware.intel.com/eula.-->
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_1_hip_reconfig_user_hwtcl" type="int">
           <ipxact:name>core4_1_hip_reconfig_user_hwtcl</ipxact:name>
-          <ipxact:displayName>Enable HIP dynamic reconfiguration of PCIe registers</ipxact:displayName>
+          <ipxact:displayName>Enable Hard IP Reconfiguration Interface</ipxact:displayName>
           <ipxact:value>0</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="core4_1_enable_legacy_interrupt_hwtcl" type="int">
@@ -18324,6 +18424,10 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:name>testbench.partner.pcie_tb.parameter.gen123_lane_rate_mode_hwtcl</ipxact:name>
           <ipxact:value>Gen5 (32.0 Gbps)</ipxact:value>
         </ipxact:parameter>
+        <ipxact:parameter parameterId="testbench.partner.pcie_tb.parameter.generating_ed_hwtcl" type="string">
+          <ipxact:name>testbench.partner.pcie_tb.parameter.generating_ed_hwtcl</ipxact:name>
+          <ipxact:value>0</ipxact:value>
+        </ipxact:parameter>
         <ipxact:parameter parameterId="testbench.partner.pcie_tb.parameter.lane_mask_hwtcl" type="string">
           <ipxact:name>testbench.partner.pcie_tb.parameter.lane_mask_hwtcl</ipxact:name>
           <ipxact:value>x8</ipxact:value>
@@ -18356,6 +18460,11 @@ https://fpgasoftware.intel.com/eula.-->
     </altera:altera_assignments>
     <altera:altera_system_parameters>
       <ipxact:parameters>
+        <ipxact:parameter parameterId="board" type="string">
+          <ipxact:name>board</ipxact:name>
+          <ipxact:displayName>Board</ipxact:displayName>
+          <ipxact:value>default</ipxact:value>
+        </ipxact:parameter>
         <ipxact:parameter parameterId="device" type="string">
           <ipxact:name>device</ipxact:name>
           <ipxact:displayName>Device</ipxact:displayName>

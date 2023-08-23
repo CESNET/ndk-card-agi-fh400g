@@ -16,14 +16,14 @@ https://fpgasoftware.intel.com/eula.-->
   <ipxact:vendor>Intel Corporation</ipxact:vendor>
   <ipxact:library>ftile_pll_8x25g</ipxact:library>
   <ipxact:name>systemclk_f_0</ipxact:name>
-  <ipxact:version>2.0.1</ipxact:version>
+  <ipxact:version>2.3.0</ipxact:version>
   <ipxact:busInterfaces>
     <ipxact:busInterface>
       <ipxact:name>out_systempll_synthlock_0</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -67,10 +67,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>out_systempll_clk_0</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="ftile_hssi_system_clock" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="ftile_hssi_system_clock" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="ftile_hssi_system_clock" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="ftile_hssi_system_clock" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -104,10 +104,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>out_refclk_fgt_0</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="ftile_hssi_reference_clock" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="ftile_hssi_reference_clock" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="ftile_hssi_reference_clock" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="ftile_hssi_reference_clock" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -141,10 +141,10 @@ https://fpgasoftware.intel.com/eula.-->
     </ipxact:busInterface>
     <ipxact:busInterface>
       <ipxact:name>refclk_fgt</ipxact:name>
-      <ipxact:busType vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:busType>
+      <ipxact:busType vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:busType>
       <ipxact:abstractionTypes>
         <ipxact:abstractionType>
-          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="21.4"></ipxact:abstractionRef>
+          <ipxact:abstractionRef vendor="intel" library="intel" name="conduit" version="22.4"></ipxact:abstractionRef>
           <ipxact:portMaps>
             <ipxact:portMap>
               <ipxact:logicalPort>
@@ -260,14 +260,14 @@ https://fpgasoftware.intel.com/eula.-->
       <ipxact:vendor>Intel Corporation</ipxact:vendor>
       <ipxact:library>ftile_pll_8x25g</ipxact:library>
       <ipxact:name>systemclk_f</ipxact:name>
-      <ipxact:version>2.0.1</ipxact:version>
+      <ipxact:version>2.3.0</ipxact:version>
     </altera:entity_info>
     <altera:altera_module_parameters>
       <ipxact:parameters>
         <ipxact:parameter parameterId="syspll_mod_0" type="string">
           <ipxact:name>syspll_mod_0</ipxact:name>
           <ipxact:displayName>Mode of System PLL</ipxact:displayName>
-          <ipxact:value>ETHERNET_FREQ_805_156</ipxact:value>
+          <ipxact:value>ETHERNET_FREQ_830_156</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="syspll_mod_1" type="string">
           <ipxact:name>syspll_mod_1</ipxact:name>
@@ -308,6 +308,21 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:name>syspll_freq_mhz_2</ipxact:name>
           <ipxact:displayName>Output frequency</ipxact:displayName>
           <ipxact:value>805.6640625</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="syspll_availpor_0" type="bit">
+          <ipxact:name>syspll_availpor_0</ipxact:name>
+          <ipxact:displayName>Refclk is available at power-on</ipxact:displayName>
+          <ipxact:value>true</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="syspll_availpor_1" type="bit">
+          <ipxact:name>syspll_availpor_1</ipxact:name>
+          <ipxact:displayName>Refclk is available at power-on</ipxact:displayName>
+          <ipxact:value>true</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="syspll_availpor_2" type="bit">
+          <ipxact:name>syspll_availpor_2</ipxact:name>
+          <ipxact:displayName>Refclk is available at power-on</ipxact:displayName>
+          <ipxact:value>true</ipxact:value>
         </ipxact:parameter>
         <ipxact:parameter parameterId="syspll_flux_src" type="string">
           <ipxact:name>syspll_flux_src</ipxact:name>
@@ -514,6 +529,56 @@ https://fpgasoftware.intel.com/eula.-->
           <ipxact:displayName>FHT refclk frequency #1</ipxact:displayName>
           <ipxact:value></ipxact:value>
         </ipxact:parameter>
+        <ipxact:parameter parameterId="refclk_fgt_coreclk_enable_0" type="bit">
+          <ipxact:name>refclk_fgt_coreclk_enable_0</ipxact:name>
+          <ipxact:displayName>Enable FGT refclk#0 to core</ipxact:displayName>
+          <ipxact:value>false</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="refclk_fgt_coreclk_enable_1" type="bit">
+          <ipxact:name>refclk_fgt_coreclk_enable_1</ipxact:name>
+          <ipxact:displayName>Enable FGT refclk#1 to core</ipxact:displayName>
+          <ipxact:value>false</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="refclk_fgt_coreclk_enable_2" type="bit">
+          <ipxact:name>refclk_fgt_coreclk_enable_2</ipxact:name>
+          <ipxact:displayName>Enable FGT refclk#2 to core</ipxact:displayName>
+          <ipxact:value>false</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="refclk_fgt_coreclk_enable_3" type="bit">
+          <ipxact:name>refclk_fgt_coreclk_enable_3</ipxact:name>
+          <ipxact:displayName>Enable FGT refclk#3 to core</ipxact:displayName>
+          <ipxact:value>false</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="refclk_fgt_coreclk_enable_4" type="bit">
+          <ipxact:name>refclk_fgt_coreclk_enable_4</ipxact:name>
+          <ipxact:displayName>Enable FGT refclk#4 to core</ipxact:displayName>
+          <ipxact:value>false</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="refclk_fgt_coreclk_enable_5" type="bit">
+          <ipxact:name>refclk_fgt_coreclk_enable_5</ipxact:name>
+          <ipxact:displayName>Enable FGT refclk#5 to core</ipxact:displayName>
+          <ipxact:value>false</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="refclk_fgt_coreclk_enable_6" type="bit">
+          <ipxact:name>refclk_fgt_coreclk_enable_6</ipxact:name>
+          <ipxact:displayName>Enable FGT refclk#6 to core</ipxact:displayName>
+          <ipxact:value>false</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="refclk_fgt_coreclk_enable_7" type="bit">
+          <ipxact:name>refclk_fgt_coreclk_enable_7</ipxact:name>
+          <ipxact:displayName>Enable FGT refclk#7 to core</ipxact:displayName>
+          <ipxact:value>false</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="refclk_fgt_coreclk_enable_8" type="bit">
+          <ipxact:name>refclk_fgt_coreclk_enable_8</ipxact:name>
+          <ipxact:displayName>Enable FGT refclk#8 to core</ipxact:displayName>
+          <ipxact:value>false</ipxact:value>
+        </ipxact:parameter>
+        <ipxact:parameter parameterId="refclk_fgt_coreclk_enable_9" type="bit">
+          <ipxact:name>refclk_fgt_coreclk_enable_9</ipxact:name>
+          <ipxact:displayName>Enable FGT refclk#9 to core</ipxact:displayName>
+          <ipxact:value>false</ipxact:value>
+        </ipxact:parameter>
         <ipxact:parameter parameterId="device" type="string">
           <ipxact:name>device</ipxact:name>
           <ipxact:displayName>device</ipxact:displayName>
@@ -538,6 +603,11 @@ https://fpgasoftware.intel.com/eula.-->
     </altera:altera_module_parameters>
     <altera:altera_system_parameters>
       <ipxact:parameters>
+        <ipxact:parameter parameterId="board" type="string">
+          <ipxact:name>board</ipxact:name>
+          <ipxact:displayName>Board</ipxact:displayName>
+          <ipxact:value>Intel Agilex I-Series FPGA Development Kit DK-DEV-AGI027RES</ipxact:value>
+        </ipxact:parameter>
         <ipxact:parameter parameterId="device" type="string">
           <ipxact:name>device</ipxact:name>
           <ipxact:displayName>Device</ipxact:displayName>

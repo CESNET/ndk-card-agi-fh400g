@@ -179,3 +179,4 @@ set_instance_assignment -name IO_STANDARD "1.2 V" -to AG_CFG_IMG_SEL
 #set_instance_assignment -name IO_STANDARD "1.2 V" -to FLASH_BYTE_N 
 #set_instance_assignment -name IO_STANDARD "1.2 V" -to FLASH_WP_N 
 #set_instance_assignment -name IO_STANDARD "1.2 V" -to FLASH_RST_N 
+

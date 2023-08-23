@@ -19,6 +19,8 @@ set CARD_ARCHGRP(NET_MOD_ARCH)       $NET_MOD_ARCH
 set CARD_ARCHGRP(PCIE_ENDPOINT_MODE) $PCIE_ENDPOINT_MODE
 # Second dimension because of addition of an element of another array, just for clarity.
 set CARD_ARCHGRP(ETH_PORT_SPEED,0)   $ETH_PORT_SPEED(0)
+set CARD_ARCHGRP(ETH_PORT_CHAN,0)    $ETH_PORT_CHAN(0)
+set CARD_ARCHGRP(EHIP_PORT_TYPE,0)   $EHIP_PORT_TYPE(0)
 
 # make lists from associative arrays
 set CARD_ARCHGRP_L [array get CARD_ARCHGRP]
@@ -64,6 +66,10 @@ set SYNTH_FLAGS(CONSTR) "$SYNTH_FLAGS(CONSTR) $CARD_BASE/constr/sodimm.qsf"
 set SYNTH_FLAGS(CONSTR) "$SYNTH_FLAGS(CONSTR) $CARD_BASE/constr/pcie_misc.qsf"
 set SYNTH_FLAGS(CONSTR) "$SYNTH_FLAGS(CONSTR) $CARD_BASE/constr/pcie0.qsf"
 set SYNTH_FLAGS(CONSTR) "$SYNTH_FLAGS(CONSTR) $CARD_BASE/constr/qsfp_misc.qsf"
+
+if {$EHIP_PORT_TYPE(0) == 1} {
+    set SYNTH_FLAGS(CONSTR) "$SYNTH_FLAGS(CONSTR) $CARD_BASE/constr/multirate.qsf"
+}
 
 if {$PCIE_ENDPOINT_MODE == 1} {
     set PCIE_HIPS [expr $PCIE_ENDPOINTS/2]
