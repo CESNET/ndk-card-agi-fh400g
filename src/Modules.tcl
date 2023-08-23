@@ -23,6 +23,8 @@ lappend MOD "$ENTITY_BASE/ip/OnBoard_DDR4.ip"
 lappend MOD "$ENTITY_BASE/ip/emif_agi027_cal.ip"
 lappend MOD "$ENTITY_BASE/ip/mailbox_client_ip.ip"
 
+
+
 if {$ARCHGRP_ARR(PCIE_ENDPOINT_MODE) == 0} {
     lappend MOD "$ENTITY_BASE/ip/rtile_pcie_1x16.ip"
 }
@@ -40,9 +42,19 @@ if {$ARCHGRP_ARR(NET_MOD_ARCH) == "F_TILE"} {
         lappend MOD "$ENTITY_BASE/ip/ftile_eth_2x200g.ip"
     }
     if {$ARCHGRP_ARR(ETH_PORT_SPEED,0) == 100} {
+        if {$ARCHGRP_ARR(EHIP_PORT_TYPE,0) == 0} {
+            if {$ARCHGRP_ARR(ETH_PORT_CHAN,0) == 4} {
+                lappend MOD "$ENTITY_BASE/ip/ftile_eth_4x100g.ip"
+            }
+            if {$ARCHGRP_ARR(ETH_PORT_CHAN,0) == 2} {
+                lappend MOD "$ENTITY_BASE/ip/ftile_eth_2x100g.ip"
+            }
+        }
+        if {$ARCHGRP_ARR(EHIP_PORT_TYPE,0) == 1} {
+            lappend MOD "$ENTITY_BASE/ip/ftile_multrate_eth_F_NOF_1x100g.ip"
+            lappend MOD "$ENTITY_BASE/ip/dr_ctrl.ip"
+        }
         lappend MOD "$ENTITY_BASE/ip/ftile_pll_4x100g.ip"
-        lappend MOD "$ENTITY_BASE/ip/ftile_eth_2x100g.ip"
-        lappend MOD "$ENTITY_BASE/ip/ftile_eth_4x100g.ip"
     }
     if {$ARCHGRP_ARR(ETH_PORT_SPEED,0) == 50} {
         lappend MOD "$ENTITY_BASE/ip/ftile_pll_8x50g.ip"
@@ -53,8 +65,14 @@ if {$ARCHGRP_ARR(NET_MOD_ARCH) == "F_TILE"} {
         lappend MOD "$ENTITY_BASE/ip/ftile_eth_2x40g.ip"
     }
     if {$ARCHGRP_ARR(ETH_PORT_SPEED,0) == 25} {
+        if {$ARCHGRP_ARR(EHIP_PORT_TYPE,0) == 0} {
+            lappend MOD "$ENTITY_BASE/ip/ftile_eth_8x25g.ip"
+        }
+        if {$ARCHGRP_ARR(EHIP_PORT_TYPE,0) == 1} {
+            lappend MOD "$ENTITY_BASE/ip/ftile_multirate_eth_1x25g_1x10g.ip"
+            lappend MOD "$ENTITY_BASE/ip/dr_ctrl.ip"
+        }
         lappend MOD "$ENTITY_BASE/ip/ftile_pll_8x25g.ip"
-        lappend MOD "$ENTITY_BASE/ip/ftile_eth_8x25g.ip"
     }
     if {$ARCHGRP_ARR(ETH_PORT_SPEED,0) == 10} {
         lappend MOD "$ENTITY_BASE/ip/ftile_pll_8x10g.ip"
